@@ -1,0 +1,231 @@
+.spec-category{
+    position: relative;
+}
+
+.spec-category-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 50px;
+
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        height: 1px;
+        z-index: -1;
+        width: 100%;
+        background: #D9ECFD;
+    }
+}
+
+.spec-category-title{
+    font-family: 'Oswald', 'Roboto Condensed', sans-serif;
+    font-size: 36px;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #334E68 !important;
+    padding-right: 15px;
+    background: #fff;
+}
+
+.spec-category-url{
+    font-family: 'Montserrat', 'sans-serif';
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    padding-left: 15px;
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: #2A4B5E;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &.spec-more{
+        padding-right: 15px;
+        .btn{
+            transform: rotate(90deg);
+
+            svg{
+                path{
+                    fill: #3D90DC;
+                }
+            }
+        }
+
+        &:hover{
+
+            .btn{
+                transform: rotate(90deg);
+                background: #3D90DC;;
+
+                svg{
+                    path{
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.spec-item{
+    display: flex;
+    position: relative;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #D9ECFD;
+
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 16px 24px;
+    font-family: 'Montserrat', sans-serif;
+
+    .arrow{
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        border-top-left-radius: 45px;
+        border-bottom-right-radius: 8px;
+        background: #439FF4;
+        opacity: 0;
+        transition: opacity .1s linear;
+        svg{
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            path{
+              fill: #fff;
+            }
+        }
+    }
+
+    &:hover{
+        text-decoration: none;
+        box-shadow: 0 0 5px #c8e4fd;
+        .arrow{
+            opacity: 1;
+        }
+    }
+
+
+}
+
+.spec-item-image{
+    display: block;
+    width: 137px;
+    height: 137px;
+    border-radius: 8px;
+    background-color: #F0F6FB;
+    margin-right: 16px;
+    overflow: hidden;
+    position: relative;
+    img{
+        width: 75%;
+        height: 75%;
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.spec-item-title{
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #334E68;
+}
+
+.spec-item-meta{
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #90A4B7;
+    margin-bottom: 10px;
+
+    .badge{
+
+        font-weight: 600;
+        font-size: 12px;
+        color: #3D90DC;
+        border-radius: 50%;
+        min-width: 24px;
+        height: 24px;
+        text-align: center;
+        padding: 0;
+        line-height: 24px;
+        margin-right: 5px;
+    }
+}
+
+
+.spec-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 50px;
+
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        height: 1px;
+        z-index: -1;
+        width: 100%;
+        background: #D9ECFD;
+    }
+}
+
+@media all and (max-width: breakpoint-max(md)) {
+    .spec-category-header {
+        max-height: none;
+        align-items: flex-start;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    .spec-category-title {
+        font-size: 28px;
+        line-height: 1.2;
+        height: auto;
+
+    }
+
+    .spec-category-url {
+        height: auto;
+        line-height: 1.2;
+    }
+
+    .spec-item {
+        padding: 10px;
+    }
+
+    .spec-item-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .spec-item-title {
+        font-size: 18px;
+    }
+
+
+}

@@ -1,0 +1,69 @@
+.draggable-container{
+    width: 100%;
+    position: relative;
+}
+
+.draggable--is-dragging{
+
+}
+
+.draggable-container--is-dragging{
+
+}
+
+
+.draggable-source--placed{
+
+}
+
+.draggable-container--placed{
+
+}
+
+.draggable--over{
+
+}
+
+.draggable-container--over{
+
+}
+
+.draggable--original{
+
+}
+.draggable-mirror{
+
+}
+.card > .card-header + .list-group{
+    &.draggable-container{
+        border-top: 1px solid rgba(0, 0, 0, 0.125);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    }
+
+    .draggable-handle{
+        align-self: center;
+        cursor: move;
+    }
+
+}
+
+.draggable-container--is-dragging{
+    .draggable--original{
+        display: none !important;
+    }
+
+    .draggable-source--is-dragging{
+        opacity: 0.5;
+        .btn{
+            display: none !important;
+        }
+    }
+
+    .draggable-mirror{
+        width: 450px;
+        .btn{
+            display: none !important;
+        }
+    }
+
+}

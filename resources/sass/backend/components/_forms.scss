@@ -1,0 +1,75 @@
+.input-group-navbar {
+  .form-control,
+  .btn {
+    height: $input-height-lg;
+    background: $body-bg;
+    box-shadow: none;
+    border: 0;
+    padding: $input-padding-y-lg $spacer*0.75;
+
+    &:focus {
+      background: $body-bg;
+      box-shadow: none;
+      outline: 0;
+    }
+  }
+
+  .btn {
+    color: $gray-600;
+
+    .feather {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+select{
+    &.form-control{
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-down'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+        background-position-x: 100%;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        padding-right: 25px;
+        &:focus{
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-up'%3E%3Cpolyline points='18 15 12 9 6 15'%3E%3C/polyline%3E%3C/svg%3E");
+        }
+    }
+}
+
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $gray-500;
+    opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $gray-500;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: $gray-500;
+}
+
+
+.img-thumbnail-wrp{
+    position: relative;
+    display: inline-block;
+    .clear-image{
+        position: absolute;
+        right: 10px;
+        top: 2px;
+        font-size: 24px;
+    }
+}
+
+
+.flatpickr-input[readonly] {
+    background-color: #fff;
+}
+
+.form-group{
+    &.row{
+        margin-bottom: 1rem;
+    }
+}

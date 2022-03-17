@@ -1,0 +1,154 @@
+// START BOOTSTRAP
+// Required
+@import "../../fonts/clanderon/stylesheet";
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "mixin";
+
+@import "variables";
+
+@import "~bootstrap/scss/utilities";
+
+// Layout & components
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+//@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+//@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+//@import "~bootstrap/scss/accordion";
+//@import "~bootstrap/scss/breadcrumb";
+//@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/alert";
+//@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/toasts";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/spinners";
+
+// Helpers
+@import "~bootstrap/scss/helpers";
+
+// Utilities
+@import "~bootstrap/scss/utilities/api";
+// END BOOTSTRAP
+
+// 3rd party plugin styles
+
+@import "../vendor/sweetalert2";
+@import "~flatpickr/dist/flatpickr.css";
+@import "~perfect-scrollbar/css/perfect-scrollbar.css";
+@import "~vue-multiselect/dist/vue-multiselect.css";
+@import "~cropperjs/src/index";
+//mport 'cropperjs/dist/cropper.css';
+
+@import "common";
+
+// components
+@import "margins";
+@import "helpers";
+@import "transitions";
+
+@import "component/forms";
+@import "components/buttons";
+
+//@import "components/header";
+//@import "components/banner";
+//@import "components/about";
+//@import "components/category";
+@import "components/partners";
+@import "components/process";
+@import "components/offer";
+
+@import "components/search";
+//@import "components/filter";
+@import "components/dropdown";
+
+@import "components/range";
+@import "components/radio-buttons";
+@import "components/cards";
+@import "components/navigation";
+@import "components/header-authorization";
+@import "components/registration";
+@import "components/creating-profile-step1";
+@import "components/checkbox";
+@import "components/creating-profile-step2";
+@import "components/my-profile";
+@import "components/header-no-active";
+@import "components/my-contacts";
+@import "components/happy-help";
+@import "components/my-messages";
+@import "components/my-contacts-popup";
+@import "components/slider";
+@import "components/document";
+@import "components/modifiers";
+@import "components/profile-recruiter";
+@import "components/page-vacancies";
+@import "components/header-cabinet";
+@import "components/regulations";
+@import "components/creating-profile-recruiter";
+@import "components/page-base";
+@import "components/page-candidates";
+@import "components/team";
+//@import "components/payment";
+@import "components/calendar";
+@import "components/page-candidate";
+@import "components/invoice";
+@import "components/tooltip";
+@import "components/simplebar";
+
+@import "components/wizard";
+@import "components/typeahead";
+
+// Новые оптимизированные компоненты
+@import "component/svg-icon";
+@import "component/chip";
+@import "component/home";
+@import "component/home-banner";
+@import "component/badge";
+@import "component/alert";
+@import "component/header";
+@import "component/footer";
+@import "component/page-header";
+@import "component/page";
+@import "component/sidebar";
+@import "component/profile";
+@import "component/specialisation";
+@import "component/vacancy-search";
+@import "component/vacancies";
+@import "component/recruiter";
+@import "component/company";
+@import "component/filter";
+@import "component/calendar";
+@import "component/table";
+@import "component/invoice";
+@import "component/messenger";
+@import "component/partners";
+@import "component/process";
+@import "component/toast";
+@import "component/push-question";
+@import "component/tags";
+@import "component/pagination";
+@import "component/cropper";
+
+@import "pages/auth";
+@import "pages/common";
+
+
+

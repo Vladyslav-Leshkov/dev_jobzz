@@ -1,0 +1,100 @@
+
+.row-form {
+   display: flex;
+   @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+   }
+}
+.row-label {
+   flex: 0 1 24%;
+   .col-my-contacts {
+      margin-top: 10px;
+   }
+   @media (max-width: 992px) {
+      flex: 0 1 55%;
+   }
+}
+
+.row-textarea {
+   flex: 0 1 76%;
+   padding-left: 5px;
+   @media (max-width: 768px) {
+      padding-left: 0px;
+   }
+}
+
+.col-value {
+   position: relative;
+
+   // .col-value__text
+   &__text {
+      position: absolute;
+      top: -16px;
+      right: 7px;
+   }
+}
+
+p.col-value__text {
+   font-size: 12px;
+   color: #2a4b5d;
+   margin-bottom: 0px;
+}
+label.l-h-34 {
+   line-height: 34px;
+}
+label.m-t-2 {
+   margin-top: 2px;
+}
+.h-96 {
+   textarea {
+      height: 96px;
+      width: 100%;
+   }
+}
+
+.w-100 .form-control::placeholder,
+.h-96 .form-control::placeholder {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 28px;
+   color: $font1;
+}
+
+.w-100 .form-control {
+   margin-bottom: 23px;
+}
+
+label.label-size {
+   font-weight: 600;
+   font-size: 15px;
+   line-height: 18px;
+   color: #2a4b5d;
+   &::before {
+      @media (max-width: 407px) {
+         top: 0;
+      }
+   }
+}
+
+.w-xl-100 {
+   @media (max-width: 1400px) {
+      width: 100%;
+   }
+}
+.d-n-992 {
+   @media (max-width: 992px) {
+      display: none;
+   }
+}
+
+.d-f-992 {
+   display: none;
+   @media (max-width: 992px) {
+      display: flex;
+   }
+   @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+   }
+}

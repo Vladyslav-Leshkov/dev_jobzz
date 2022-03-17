@@ -1,0 +1,20 @@
+//=============================================================================================================================
+//скроллбар
+.simplebar {
+   margin-top: 26px;
+   max-height: 600px;
+   width: 100%;
+   overflow-x: hidden;
+   margin-left: 0px;
+   right: -2px;
+}
+.simplebar-track.simplebar-vertical {
+   width: 3px;
+   background: #b5c3d1;
+}
+.messages-page {
+   // .messages-page__main
+   &__main {
+      padding: 0px 30px 0px 10px;
+   }
+}

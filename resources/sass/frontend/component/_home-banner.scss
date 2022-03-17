@@ -1,0 +1,107 @@
+.home-banner{
+    position: relative;
+    height: calc(100vh - 88px);
+    width: 100%;
+    background-image: url('../../../images/home-banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    display: flex;
+
+    .container{
+        margin: auto;
+    }
+
+    h1{
+        font-family: 'Oswald', sans-serif;
+        font-size: 80px;
+        line-height: 1.3;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 50px;
+    }
+}
+
+.home-banner-btns{
+    display: flex;
+    flex-wrap: wrap;
+
+    .btn{
+        display: inline-flex;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;;
+        font-weight: 600;
+        font-size: 26px;
+        padding: 15px 30px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+
+
+        i {
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-left: 22px;
+            text-align: center;
+            padding-top: 0;
+        }
+
+        span {
+
+        }
+    }
+}
+
+@media all and (min-width: breakpoint-min(md)) {
+    .home-banner {
+        .btn {
+            white-space: nowrap;
+        }
+    }
+}
+
+@media all and (max-width: breakpoint-max(lg)) {
+    .home-banner {
+        background-position: center center;
+
+        h1 {
+            font-size: 60px;
+        }
+    }
+}
+
+
+@media all and (max-width: breakpoint-max(md)) {
+    .home-banner {
+        height: auto;
+        min-height: calc(100vh - 82px);
+
+        h1 {
+            font-size: 36px;
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+
+        .container {
+            margin: 0 auto;
+        }
+    }
+
+    .home-banner-btns {
+        flex-direction: column;
+
+        .btn {
+            display: flex;
+            width: 100%;
+            padding: 10px 20px;
+            max-width: 350px;
+            justify-content: space-between;
+            font-size: 18px;
+
+            i {
+                line-height: 38px;
+            }
+        }
+    }
+}

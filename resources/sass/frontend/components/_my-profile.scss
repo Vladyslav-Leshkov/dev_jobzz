@@ -1,0 +1,139 @@
+//Верхная часть
+.my-profile {
+   // .my-profile__bg
+   &__bg {
+      background: #06396a;
+      opacity: 0.9;
+      margin-bottom: 54px;
+      padding: 50px 0px 30px 10px;
+      height: 169px;
+      @media (max-width: 500px) {
+         height: 100%;
+      }
+   }
+   // .my-profile__main
+   &__main {
+      padding: 0px 10px;
+      @media (max-width: 992px) {
+         padding: 0px;
+      }
+   }
+   // .my-profile__turn
+   &__turn {
+      margin-top: 5px;
+      span {
+         color: #ff7474;
+         margin-right: 5px;
+         font-weight: 500;
+         font-size: 14px;
+      }
+      a {
+         text-decoration-line: underline;
+         color: $primary20;
+         font-weight: 500;
+         font-size: 14px;
+         &:hover {
+            text-decoration: none;
+         }
+      }
+   }
+}
+.my-category {
+   @include adaptiv-value("margin-bottom", 60, 25, 1);
+}
+.post-profile {
+   @include adaptiv-value("margin-bottom", 60, 25, 1);
+}
+.my-exp {
+   @include adaptiv-value("margin-bottom", 60, 25, 1);
+}
+.sub-grey {
+   color: $font4;
+   font-weight: 400;
+}
+.my-about {
+   @include adaptiv-value("margin-bottom", 60, 25, 1);
+
+   @media (max-width: 992px) {
+      //margin-top: 14px;
+   }
+}
+
+.my-income {
+   @include adaptiv-value("margin-bottom", 60, 25, 1);
+   @media (max-width: 992px) {
+      margin-top: 5px;
+      margin-bottom: 43px;
+   }
+}
+.control-mb {
+   margin-bottom: 0px;
+}
+.my-options {
+   width: 95%;
+   @include adaptiv-value("margin-bottom", 46, 25, 1);
+
+   //@include adaptiv-value("margin-top", 80, 40, 1);
+   @media (max-width: 992px) {
+      //margin-top: 39px;
+      width: 100%;
+   }
+}
+.my-city {
+   @include adaptiv-value("margin-bottom", 37, 25, 1);
+   @media (max-width: 992px) {
+      //margin-top: 37px;
+   }
+}
+
+.my-skills {
+   @include adaptiv-value("margin-bottom", 37, 25, 1);
+}
+.my-publish {
+   @include adaptiv-value("margin-bottom", 80, 30, 1);
+}
+
+.my-field {
+   textarea {
+      //overflow: hidden;
+      @media (max-width: 992px) {
+         padding: 10px;
+      }
+      &::-webkit-scrollbar {
+         width: 0;
+      }
+   }
+}
+.my-info {
+   margin-top: 0px;
+   @include adaptiv-value("margin-bottom", 50, 25, 1);
+}
+
+.info-profile {
+   // .info-profile__block
+   &__block {
+      position: relative;
+      margin-bottom: 18px;
+   }
+  
+}
+
+.text-star {
+   span {
+      border: 1px solid transparent;
+      &::before {
+         position: absolute;
+         top: 0;
+         left: 0;
+         content: "";
+         width: 40px;
+         height: 40px;
+         border-radius: 50%;
+         border: 1px solid #d9ecfd;
+         background: #ffff url("/images/icons/star.svg") 50% 50% / 60% no-repeat;
+         padding: 10px 19px;
+         margin-right: 10px;
+        
+      }
+   }
+}

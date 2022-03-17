@@ -1,0 +1,24 @@
+
+.typeahead{
+    position: relative;
+    display: inline-block;
+
+    .list-group{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .list-group-item{
+        border-bottom-width: 0;
+        font-size: 14px;
+        a{
+            display: block;
+
+        }
+        &:last-of-type{
+            border-bottom-width: 1px;
+        }
+    }
+}

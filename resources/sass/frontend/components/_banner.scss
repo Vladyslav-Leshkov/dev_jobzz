@@ -1,0 +1,153 @@
+.page {
+   // .page__home
+   &__main {
+      background: url("/images/home-img.jpg") no-repeat;
+      max-height: 860px;
+      @include adaptiv-value("padding-bottom", 250, 50, 1);
+   }
+   // .page__check
+   &__check {
+      margin: 0 0 0 76px;
+      &:hover {
+         text-decoration: underline;
+      }
+      @media (max-width: 768px) {
+         margin: 0;
+      }
+
+      a {
+         color: #ffffff;
+         font-weight: 500;
+         font-size: 14px;
+         line-height: 28px;
+         font-family: "Roboto", sans-serif;
+         text-decoration: none;
+         @media (max-width: 1035px) {
+            font-size: 18px;
+         }
+      }
+   }
+}
+.banner-page {
+   // .banner-page__text
+
+   &__text {
+      @include adaptiv-value("padding-top", 280, 40, 1);
+   }
+   // .banner-page__title
+   &__title {
+      h1 {
+         @include adaptiv-font(88, 44, 1);
+         line-height: 112 / 88 * 100%;
+         text-transform: uppercase;
+         font-family: "Oswald", sans-serif;
+         color: #ffffff;
+      }
+      margin-bottom: 42px;
+   }
+   // .banner-page__buttons
+   &__buttons {
+      display: flex;
+      @media (max-width: 1035px) {
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+      }
+   }
+
+    .buttons-banner {
+        // .buttons-banner__job
+        &__job {
+            margin-right: 17px;
+            border: 1px solid transparent;
+            &:hover {
+                border: 1px solid $secondary90;
+                border-radius: 8px;
+            }
+        }
+
+        // .buttons-banner__specialist
+        &__specialist,
+        &__job {
+            margin-bottom: 5px;
+        }
+        // .buttons-banner__specialist
+        &__specialist {
+            border: 1px solid transparent;
+            &:hover {
+                border: 1px solid $primary70;
+                border-radius: 8px;
+            }
+        }
+    }
+    .job-btn {
+        position: relative;
+        padding: 21px 117px 21px 45px;
+        background: #ffffff;
+        border-radius: 8px;
+        text-align: center;
+        &:hover {
+            background: #ffffff;
+        }
+
+        @media (max-width: 768px) {
+            width: 325px;
+            padding: 21px 25px;
+            text-align: left;
+        }
+        @media (max-width: 360px) {
+            width: 280px;
+            padding: 21px 25px;
+            text-align: left;
+        }
+        span {
+            @include adaptiv-font(24, 20, 1);
+            line-height: 28px;
+            font-family: "Roboto", sans-serif;
+            color: $font1;
+            font-weight: 500;
+        }
+        &::after {
+            position: absolute;
+            top: 22%;
+            right: 15%;
+            content: "";
+            width: 40px;
+            height: 40px;
+            background-color: $secondary90;
+            border-radius: 50%;
+            background-image: url("data:image/svg+xml,%0A%3Csvg width='15' height='10' viewBox='0 0 15 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.36512 9.80683C9.08879 10.0644 8.64077 10.0644 8.36444 9.80683C8.08811 9.54927 8.08811 9.13169 8.36444 8.87413L11.8138 5.65916L0.707214 5.50133C0.316639 5.50133 1.63317e-05 5.20622 1.63317e-05 4.84218C1.63317e-05 4.47814 0.31664 4.18302 0.707215 4.18302L11.8138 4.34085L8.36444 1.12585C8.08811 0.868297 8.08811 0.450712 8.36445 0.193158C8.64078 -0.0643892 9.08879 -0.0643857 9.36511 0.193166L13.9844 4.49865C14.2815 4.77554 14.2815 5.22445 13.9844 5.50133L9.36512 9.80683Z' fill='white'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: 50%;
+            padding: 10.6px 20px;
+            @media (max-width: 768px) {
+                right: 8%;
+            }
+        }
+    }
+
+    .spec-btn {
+        &::after {
+            right: 8%;
+        }
+    }
+
+    .btn-blue {
+        padding: 21px 90px 21px 33px;
+        @media (max-width: 768px) {
+            padding: 21px 25px;
+            text-align: left;
+        }
+        &::after {
+            content: "";
+            width: 40px;
+            height: 40px;
+            background: $primary70;
+            border-radius: 50%;
+            background-image: url("data:image/svg+xml,%0A%3Csvg width='15' height='10' viewBox='0 0 15 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.36512 9.80683C9.08879 10.0644 8.64077 10.0644 8.36444 9.80683C8.08811 9.54927 8.08811 9.13169 8.36444 8.87413L11.8138 5.65916L0.707214 5.50133C0.316639 5.50133 1.63317e-05 5.20622 1.63317e-05 4.84218C1.63317e-05 4.47814 0.31664 4.18302 0.707215 4.18302L11.8138 4.34085L8.36444 1.12585C8.08811 0.868297 8.08811 0.450712 8.36445 0.193158C8.64078 -0.0643892 9.08879 -0.0643857 9.36511 0.193166L13.9844 4.49865C14.2815 4.77554 14.2815 5.22445 13.9844 5.50133L9.36512 9.80683Z' fill='white'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: 50%;
+            padding: 10.6px 20px;
+        }
+    }
+}

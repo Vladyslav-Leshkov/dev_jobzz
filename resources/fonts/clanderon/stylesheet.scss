@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Clarendon BT';
+    src: url('ClarendonBT-Roman.eot');
+    src: local('Clarendon BT'), local('ClarendonBT-Roman'),
+        url('ClarendonBT-Roman.eot?#iefix') format('embedded-opentype'),
+        url('ClarendonBT-Roman.woff2') format('woff2'),
+        url('ClarendonBT-Roman.woff') format('woff'),
+        url('ClarendonBT-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Clarendon BT';
+    src: url('ClarendonBT-Bold.eot');
+    src: local('Clarendon Bold BT'), local('ClarendonBT-Bold'), local('Clarendon BT Bold'),
+    url('ClarendonBT-Bold.eot?#iefix') format('embedded-opentype'),
+    url('ClarendonBT-Bold.woff2') format('woff2'),
+    url('ClarendonBT-Bold.woff') format('woff'),
+    url('ClarendonBT-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Clarendon BT';
+    src: url('ClarendonBT-Black.eot');
+    src: local('Clarendon Black'), local('ClarendonBT-Black'), local('Clarendon blk bt'), local('Clarendon BT Black'),
+    url('ClarendonBT-Black.eot?#iefix') format('embedded-opentype'),
+    url('ClarendonBT-Black.woff2') format('woff2'),
+    url('ClarendonBT-Black.woff') format('woff'),
+    url('ClarendonBT-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

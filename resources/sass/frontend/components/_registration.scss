@@ -1,0 +1,309 @@
+.main-registration {
+   // .main-registration__body
+   &__body {
+      display: flex;
+      @media (max-width: 1035px) {
+         display: flex;
+         flex-direction: column;
+      }
+   }
+
+   // .main-registration__item1
+   &__item1 {
+      flex: 0 0 58.5%;
+      width: 100%;
+      @media (max-width: 1035px) {
+         flex: 0 0 100%;
+         margin: 0 auto;
+      }
+   }
+
+   // .main-registration__item2
+   &__item2 {
+      flex: 0 1 auto;
+      @media (max-width: 1035px) {
+         display: none;
+      }
+   }
+
+   // .main-registration__width
+   &__width {
+      width: 500px;
+      text-align: center;
+      margin: 57px 22% 0 auto;
+      @media (max-width: 1035px) {
+         margin: 12px auto;
+      }
+      @media (max-width: 550px) {
+         width: 100%;
+         text-align: start;
+      }
+   }
+
+   // .main-registration__title
+   &__title {
+      @include adaptiv-value("margin-bottom", 54, 30, 1);
+   }
+
+   // .main-registration__buttons
+   &__buttons {
+      @include adaptiv-value("margin-bottom", 47, 30, 1);
+      @media (max-width: 550px) {
+         text-align: center;
+      }
+   }
+
+   // .main-registration__forms
+   &__forms {
+      margin-left: 39px;
+      @media (max-width: 600px) {
+         margin-left: 0px;
+      }
+
+      form {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+      }
+   }
+
+   // .main-registration__text
+   &__text {
+      @include adaptiv-value("margin-bottom", 55, 30, 1);
+      font-size: 14px;
+      line-height: 17px;
+      color: #252733;
+
+      a {
+         &:not(.btn) {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            color: #2a4b5d;
+            text-decoration: none;
+
+            &:hover {
+               text-decoration: underline;
+            }
+         }
+
+      }
+
+      span {
+         font-size: 12px;
+         line-height: 15px;
+         color: $font4;
+      }
+
+      p {
+         padding-bottom: 4px;
+      }
+
+      @media (max-width: 550px) {
+         text-align: center;
+      }
+   }
+
+   // .main-registration__bg
+   &__bg {
+      position: relative;
+      height: 100%;
+
+      img {
+         height: 100%;
+      }
+
+      @media (max-width: 1035px) {
+         display: none;
+      }
+   }
+
+   // .main-registration__quote
+   &__quote {
+      position: absolute;
+      top: 41%;
+      left: 34%;
+      width: 300px;
+      text-align: center;
+
+      span {
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+         font-weight: 600;
+         font-size: 24px;
+         line-height: 29px;
+         color: $primary20;
+
+         &::before {
+            content: "";
+
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='18' viewBox='0 0 24 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10.7143H5.14285L1.71426 17.5714H6.85711L10.2857 10.7143V0.428589H0V10.7143Z' fill='white'/%3E%3Cpath d='M13.7144 0.428589V10.7143H18.8572L15.4286 17.5714H20.5715L24.0001 10.7143V0.428589H13.7144Z' fill='white'/%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+            background-position: 50%;
+            padding: 10.6px 20px;
+            margin: 0 auto 11px auto;
+         }
+      }
+
+      @media (max-width: 1400px) {
+         left: 26%;
+      }
+      @media (max-width: 1265px) {
+         left: 22%;
+      }
+      @media (max-width: 1200px) {
+         left: 18%;
+      }
+      @media (max-width: 1090px) {
+         left: 14%;
+      }
+   }
+}
+
+a.pass {
+   display: flex;
+   justify-content: flex-start;
+   margin-top: -15px;
+   margin-bottom: 33px;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 17px;
+   color: $primary70;
+   text-decoration: none;
+
+   &:hover {
+      color: #358fe1;
+   }
+}
+
+.btn-registration {
+   // .btn-registration__item
+   &__item {
+      display: inline-flex;
+      border: 1px solid #bbd5ea;
+      border-radius: 32px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 52px;
+      align-items: center;
+      text-transform: capitalize;
+      background: none;
+      color: #2a4b5d;
+      width: 221px;
+      height: 56px;
+      justify-content: center;
+
+      margin-right: 12px;
+      @media (max-width: 484px) {
+         margin-right: 0px;
+      }
+
+      &:last-child {
+         margin-right: 0px;
+      }
+
+      img {
+         margin-right: 12px;
+      }
+
+      &:hover {
+         border: 1px solid $primary70;
+      }
+
+      @media (max-width: 600px) {
+         margin-bottom: 16px;
+      }
+   }
+
+   // .btn-registration__or
+   &__or {
+      font-size: 12px;
+      line-height: 15px;
+      color: $font4;
+      @media (max-width: 600px) {
+         display: none;
+      }
+   }
+}
+
+input.form-control-bb {
+   padding: 10px 0px 1px 0px;
+}
+
+.input-dot {
+   input {
+      &::placeholder {
+         font-size: 28px;
+      }
+   }
+}
+
+.form-item {
+   border: none;
+   border-bottom: 1px solid #b1cfe8;
+}
+
+.valide {
+   label {
+      &::after {
+         content: "";
+
+         background: url("../../../svg/valide.svg") 50% no-repeat;
+         padding: 10px 8px;
+         margin-left: 4px;
+      }
+   }
+
+   .form-control {
+      border-bottom: 1px solid $secondary70;
+   }
+}
+
+.invalide {
+   position: relative;
+
+   label {
+      &::after {
+         content: "";
+         background: url("../../../svg/invalide.svg") 50% no-repeat;
+         padding: 10px 8px;
+         margin-left: 4px;
+      }
+   }
+
+   .form-control {
+      border-bottom: 1px solid $secondary80;
+      margin-bottom: 45px;
+   }
+
+   span {
+      position: absolute;
+      bottom: 20px;
+      right: 14px;
+      font-size: 15px;
+      color: $secondary80;
+   }
+}
+
+//===============================================================================================
+//Регистрация рекрутера
+
+.option-registration {
+   // .option-registration__text
+   &__text {
+      margin-top: -8px;
+      text-align: start;
+      font-size: 12px;
+      color: $font4;
+   }
+}
+
+.registration-recruiter {
+   margin: 0px 22% 0 auto;
+   @include adaptiv-value("margin-top", 140, 60, 1);
+}

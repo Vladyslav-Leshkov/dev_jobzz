@@ -1,0 +1,476 @@
+.profile-item {
+    position: relative;
+
+    hr {
+        background-color: #D9ECFD;
+        opacity: 1;
+    }
+
+
+}
+
+
+.profile-avatar {
+    width: 200px;
+    text-align: center;
+    display: block;
+    position: relative;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &.w-auto {
+        width: auto !important;
+    }
+
+    img {
+        width: 65px;
+        height: 65px;
+        border-radius: 8px;
+        overflow: hidden;
+        object-fit: cover;
+        margin-left: auto;
+        margin-right: auto;
+
+        + .profile-name {
+            margin: 10px auto 4px auto;
+        }
+    }
+
+    .avatar-initials {
+        display: block;
+        width: 85px;
+        height: 85px;
+        line-height: 85px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 28px;
+    }
+
+    .card-star,
+    .card-check {
+        position: absolute;
+        top: 50px;
+        width: 24px;
+        height: 24px;
+        left: 50%;
+        margin-left: -12px;
+
+        &:before {
+            left: 0;
+            top: 0;
+            width: 24px;
+            height: 24px;
+            margin: 0;
+            padding: 0;
+            content: "";
+            position: absolute;
+            background: #ffffff url("../../../images/icons/star.svg") center no-repeat;
+            border: 1px solid #d9ecfd;
+            border-radius: 50%;
+            background-size: 14px;
+        }
+    }
+
+    .card-check {
+
+        &:before {
+            background-image: $checked-background;
+        }
+    }
+
+    .profile-position {
+        line-height: 1.2;
+        display: block;
+        text-align: center;
+    }
+}
+
+.profile-name {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #334e68;
+
+    + .profile-position {
+        margin-top: 10px;
+    }
+}
+
+.profile-position {
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #90A4B7;
+}
+
+.publish-date {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    color: #90A4B7;
+    margin-bottom: 10px;
+}
+
+.profile-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #334E68;
+    margin-bottom: 10px;
+    text-transform: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+a.profile-title {
+    transition: all linear .2s;
+
+    &:hover {
+        text-decoration: none;
+        color: #3d90dc;
+    }
+}
+
+
+.vacancy-title,
+.profile-title {
+    &.visited {
+        color: #768a9e;
+    }
+}
+
+.profile-subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #334E68;
+    margin-bottom: 10px;
+}
+
+
+.profile-description {
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    word-wrap: break-word;
+    font-weight: 500;
+    color: #2a4b5d;
+}
+
+.profile-activity {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    color: #90A4B7;
+    margin-bottom: 10px;
+
+    strong {
+        font-weight: 600;
+        color: #334E68;
+    }
+}
+
+.vacancy-meta,
+.profile-meta {
+    display: flex;
+    align-items: stretch;
+
+    .meta-item {
+        padding: 0 16px;
+        border-left: 1px solid #D9ECFD;
+
+        &:first-of-type {
+            padding-left: 0;
+            border-left: 0 none;
+        }
+    }
+
+    .meta-title {
+        font-size: 12px;
+        line-height: 18px;
+        color: #90A4B7;
+    }
+
+    .meta-value {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        color: #334E68;
+
+        .alt {
+            color: #3d90dc;
+            font-style: italic;
+            font-weight: 300;
+        }
+    }
+
+    .text-success {
+        .meta-title,
+        .meta-value {
+            color: #35AA8E;
+        }
+    }
+
+
+}
+
+.profile-card {
+    background: #FFFFFF;
+    border: 1px solid #D9ECFD;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 30px;
+
+    .profile-subtitle {
+        font-size: 22px;
+    }
+
+    .profile-description {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+.recruiter-confirm-wrp {
+    position: relative;
+}
+
+.recruiter-confirm-toggle {
+    font-weight: 600;
+    font-size: 14px;
+    color: #334E68;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .svg-icon {
+        margin-right: 10px;
+    }
+
+    .chevron {
+        fill: none;
+        stroke: #000;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &.active {
+        .chevron {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.recruiter-confirm-messages {
+    padding: 20px 0 20px 30px;
+
+    .msgr-message {
+        .msgr-contact-title {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+        }
+
+        .msgr-contact-time {
+            margin-left: 0;
+            margin-bottom: 5px;
+        }
+
+        .msgr-message-body {
+            padding-top: 8px;
+        }
+    }
+}
+
+.profile-row {
+    display: flex;
+}
+
+.profile-col-avatar {
+    width: 180px;
+    max-width: 180px;
+    flex: 1;
+
+    .profile-avatar {
+        width: 180px;
+    }
+
+}
+
+.profile-col-text {
+    flex: 1 auto;
+    max-width: 1000px;
+}
+
+.profile-badges {
+    .badge {
+        margin-bottom: 8px;
+    }
+}
+
+
+.hiring-btn {
+    position: relative;
+
+    .hiring-confirm {
+        position: absolute;
+        z-index: 100;
+        right: -40px;
+        top: -25px;
+        transform: translateX(100%);
+        max-width: 320px;
+    }
+
+
+}
+
+.hiring-confirm {
+    background: #FFFFFF;
+    box-shadow: 0 7px 64px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+}
+
+.hiring-confirm-head {
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: -0.02em;
+    color: #334E68;
+    background: #F1F8FF;
+    border-radius: 6px 6px 0 0;
+    padding: 12px 15px;
+}
+
+.hiring-confirm-btns {
+    display: flex;
+
+}
+
+.hiring-confirm-btn {
+    text-align: center;
+    background: #F1F8FF;
+    padding: 12px 15px;
+    color: #334E68;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: -0.02em;
+    display: block;
+    width: 50%;
+    border: 1px solid #fff;
+    border-radius: 0 0 6px 6px;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+
+@media all and (max-width: breakpoint-max(xxl)) {
+    .profile-col-text {
+        flex: 1 auto;
+        max-width: 910px;
+    }
+}
+
+
+@media all and (max-width: breakpoint-max(xl)) {
+    .profile-col-text {
+        flex: 1 auto;
+        max-width: 736px;
+    }
+}
+
+@media all and (max-width: breakpoint-max(lg)) {
+    .profile-col-avatar {
+        width: 120px;
+
+        .profile-avatar {
+            width: 120px;
+
+            .avatar-initials {
+                display: block;
+                width: 65px;
+                height: 65px;
+                line-height: 65px;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 18px;
+            }
+        }
+
+    }
+    .profile-col-text {
+        flex: 1 auto;
+        max-width: 636px;
+    }
+
+    .hiring-btn {
+        .hiring-confirm {
+            min-height: 440px;
+            right: auto;
+            top: auto;
+            bottom: 50px;
+            left: -30px;
+            transform: none;
+        }
+    }
+}
+
+
+@media all and (max-width: breakpoint-max(md)) {
+    .profile-row {
+        flex-direction: column;
+    }
+    .profile-col-avatar {
+        width: auto;
+        display: flex;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .profile-avatar {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .profile-title {
+        font-size: 28px;
+    }
+
+    .profile-card {
+        padding: 20px 15px;
+    }
+
+    .profile-meta,
+    .vacancy-meta {
+        flex-direction: column;
+        padding-top: 15px;
+
+        .meta-item {
+            border-left: 0 none;
+            padding-left: 0;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media all and (max-width: breakpoint-max(sm)) {
+    .profile-title {
+        font-size: 24px;
+    }
+
+
+    .candidate-search {
+        .form-control {
+            font-size: 14px;
+        }
+    }
+}

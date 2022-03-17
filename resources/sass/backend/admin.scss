@@ -1,0 +1,74 @@
+/*!
+ * AdminKit v2.1.0 (https://adminkit.io/)
+ * Copyright 2020 Paul Laros
+ * Copyright 2020 AdminKit
+ * Licensed under MIT (https://github.com/adminkit/adminkit/blob/master/LICENSE)
+ */
+
+// Variables
+@import "variables/fonts";
+@import "variables/variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Theme mixins
+@import "mixins/button";
+@import "mixins/modal";
+@import "mixins/switch";
+@import "mixins/margins";
+
+// 3rd party plugins
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~jsvectormap/dist/css/jsvectormap";
+@import "~simplebar/dist/simplebar";
+@import "~flatpickr/dist/flatpickr";
+@import '~@sweetalert2/theme-bootstrap-4/bootstrap-4.scss';
+@import "~perfect-scrollbar/css/perfect-scrollbar.css";
+@import "~choices.js/src/styles/choices";
+
+// Theme components
+@import "components/accordion";
+@import "components/alert";
+@import "components/avatar";
+@import "components/buttons";
+@import "components/card";
+@import "components/chart";
+@import "components/content";
+@import "components/dropdown";
+@import "components/feather";
+@import "components/footer";
+@import "components/forms";
+@import "components/hamburger";
+@import "components/list-group";
+@import "components/main";
+@import "components/modal";
+@import "components/navbar";
+@import "components/progress";
+@import "components/reboot";
+@import "components/sidebar";
+@import "components/sizing";
+@import "components/tables";
+@import "components/type";
+@import "components/wrapper";
+@import "components/draggable";
+@import "components/toast";
+@import "../frontend/component/messenger";
+@import "components/messenger";
+@import "components/profile";
+@import "components/vacancies";
+@import "components/recruiter";
+
+// Theme utilities
+@import "utilities/background";
+@import "utilities/borders";
+@import "utilities/cursors";
+@import "utilities/overflow";
+@import "utilities/margins";
+
+// 3rd party plugin styles
+@import "../vendor/simplebar";
+@import "../vendor/flatpickr";
+@import "../vendor/sweetalert2";

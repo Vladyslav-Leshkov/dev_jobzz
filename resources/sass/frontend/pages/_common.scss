@@ -1,0 +1,18 @@
+
+.agree-page{
+    @include media-breakpoint-up(md) {
+        font-size: 18px;
+    }
+}
+
+
+.agree-page-btns{
+    max-width: 310px;
+    @include media-breakpoint-up(md) {
+        max-width: 400px;
+
+        .btn{
+            font-size: 18px;
+        }
+    }
+}

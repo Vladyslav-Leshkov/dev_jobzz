@@ -1,0 +1,81 @@
+.col-auth-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+
+    .btn {
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
+
+.auth-form-wrp {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.auth-form {
+    margin-left: 15px;
+    margin-right: 15px;
+
+    .form-group {
+        position: relative;
+
+        .form-error {
+            position: absolute;
+            padding-left: 0;
+        }
+    }
+}
+
+
+.auth-side {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: url("../../../images/men.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .quote {
+        margin: auto;
+        width: 300px;
+        text-align: center;
+
+        span {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            color: #ffffff;
+
+            &:before {
+                content: "";
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                border: 1px solid rgba(255, 255, 255, 0.4);
+                background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='18' viewBox='0 0 24 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10.7143H5.14285L1.71426 17.5714H6.85711L10.2857 10.7143V0.428589H0V10.7143Z' fill='white'/%3E%3Cpath d='M13.7144 0.428589V10.7143H18.8572L15.4286 17.5714H20.5715L24.0001 10.7143V0.428589H13.7144Z' fill='white'/%3E%3C/svg%3E%0A");
+                background-repeat: no-repeat;
+                background-position: 50%;
+                padding: 10.6px 20px;
+                margin: 0 auto 11px auto;
+            }
+        }
+    }
+}
+
+
+@media all and (min-width: breakpoint-min(md)) {
+    .btn-registration__items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

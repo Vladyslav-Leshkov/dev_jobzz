@@ -1,0 +1,101 @@
+
+body {
+    color: $font1;
+    background: #ffffff;
+    font-family: "Montserrat", sans-serif;
+
+    &._lock {
+        overflow: hidden;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    @media (min-width: 1400px) {
+        max-width: 1305px;
+    }
+}
+
+.container-fluid-xl {
+    @media (min-width: breakpoint-min(xl)) {
+        max-width: 100%;
+    }
+}
+
+textarea.input {
+    resize: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+h1 {
+    font-family: "Oswald", sans-serif;
+    @include adaptiv-font(36, 30, 1);
+    line-height: 71 / 48 * 100%;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: $font1;
+}
+
+h2 {
+    font-family: "Oswald", sans-serif;
+    @include adaptiv-font(32, 30, 1);
+    color: $font1;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: "Oswald", sans-serif;
+    @include adaptiv-font(28, 28, 1);
+    line-height: 53 / 36 * 100%;
+    text-transform: uppercase;
+    color: $font1;
+}
+
+h4 {
+    font-family: "Oswald", sans-serif;
+    @include adaptiv-font(24, 24, 1);
+    line-height: 48 / 32 * 100%;
+    text-transform: uppercase;
+    color: $font1;
+}
+
+h5 {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: $font4;
+}
+
+span.form-active {
+    color: $font1;
+    font-weight: 600;
+}
+
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.loading {
+    opacity: .7;
+}

@@ -1,0 +1,42 @@
+//диапазон===================================================================
+// диапазон (опыт работы)
+.item-filter {
+   // .item-filter__range
+   &__range {
+      span {
+          z-index: 1;
+          height: 2px;
+          background: #b1cfe8;
+          margin-top: -8px;
+      }
+
+       p {
+           margin-top: 10px;
+           color: $primary80;
+           font-size: 16px;
+           font-weight: 600;
+      }
+   }
+}
+
+.item-filter {
+   // .item-filter__range
+   &__range {
+      display: flex;
+      flex-direction: column;
+      input {
+         color: #b1cfe8;
+         height: 2px;
+      }
+   }
+   
+}
+
+
+@media all and (max-width: breakpoint-max('md')) {
+    .item-filter__range {
+        padding-left: 15px;
+        padding-right: 5px;
+
+    }
+}

@@ -1,0 +1,41 @@
+
+.page-title{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #334E68;
+}
+
+.page-subtitle{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 32px;
+    line-height: 28px;
+    color: #334E68;
+}
+
+.page-body {
+    padding: 35px 15px;
+    max-width: 1080px;
+    @media all and (max-width: breakpoint-max(xl)) {
+        max-width: 100%;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+@media all and (max-width: breakpoint-max(md)) {
+    .page-title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .page-subtitle {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}

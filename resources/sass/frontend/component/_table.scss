@@ -1,0 +1,207 @@
+
+.payment-table {
+    position: relative;
+    padding-right: calc(var(--bs-gutter-x) / 2);
+    padding-left: calc(var(--bs-gutter-x) / 2);
+}
+
+.payment-table-header {
+    background: #eff4f9;
+    border-radius: 8px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 8px;
+
+    > div {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .form-check {
+        margin-bottom: 0;
+        color: #439FF4;
+        font-weight: 500;
+        font-size: 15px;
+        min-height: 20px;
+    }
+}
+
+.row-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    color: #334E68;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.row-subtitle {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #90A4B7;
+}
+
+.row-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 1px solid #D9ECFD;
+    object-fit: cover;
+}
+
+.payment-table-row {
+    border: 1px solid #D9ECFD;
+    border-radius: 8px;
+    margin-bottom: 0;
+    align-items: center;
+
+    > div {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .form-check {
+        display: inline-flex;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: #439FF4;
+        font-weight: 500;
+        font-size: 15px;
+        min-height: 20px;
+        height: 20px;
+
+        label {
+            min-height: 20px;
+        }
+    }
+
+
+    .date {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: -0.02em;
+        color: #90A4B7;
+    }
+
+    .amount {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        color: #35AA8E;
+        white-space: nowrap;
+    }
+
+
+    .row-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 0;
+        font-family: "Montserrat", sans-serif;
+        line-height: 1.2;
+    }
+
+    .row-subtitle {
+        font-size: 14px;
+        line-height: 1.2;
+
+        &.black {
+            color: #334E68;
+        }
+    }
+}
+
+.archive-table-row {
+    border-bottom: 1px solid #D9ECFD;
+    margin-bottom: 8px;
+    justify-content: space-between;
+    align-items: center;
+
+    > div {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .date {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: -0.02em;
+        color: #90A4B7;
+    }
+
+    .amount {
+        display: block;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        color: #334E68;
+        white-space: nowrap;
+        margin-bottom: 3px;
+    }
+
+    small {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 2;
+    }
+
+    .status {
+        color: #35AA8E;
+        margin-right: 5px;
+    }
+
+    .invoice-no {
+
+        color: #90A4B7;
+    }
+
+    .badge {
+        border-radius: 4px;
+        padding: 8px 15px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+
+        svg {
+            margin-left: 5px;
+            vertical-align: -2px;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .badge-primary {
+        background: #E1F0FD;
+        color: #439FF4;
+    }
+
+    .badge-success {
+        background: #DAF8F0;
+        color: #35AA8E;
+    }
+
+    .row-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 0;
+        font-family: "Montserrat", sans-serif;
+        line-height: 1.2;
+    }
+
+    .row-subtitle {
+        font-size: 14px;
+        line-height: 1.2;
+
+        &.black {
+            color: #334E68;
+        }
+    }
+}

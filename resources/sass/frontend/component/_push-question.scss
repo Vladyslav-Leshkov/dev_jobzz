@@ -1,0 +1,127 @@
+.push-questions-container {
+    border-top: 1px solid #1F4D79;
+    border-bottom: 1px solid #1F4D79;
+    background: rgba(217, 234, 250, 0.95);
+    font-size: 14px;
+    line-height: 1;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 1200;
+}
+
+.push-question-item {
+
+    min-height: 80px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    border-bottom: 1px solid $primary90;
+
+    &:last-of-type {
+        border-bottom: 0 none;
+    }
+
+}
+
+.push-question-ask {
+    line-height: 1.5;
+}
+
+.push-question-content {
+    position: relative;
+    padding: 5px 25px;
+}
+
+.push-question-actions {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        color: #1F4D79;
+        font-weight: bold;
+        margin: 7px 20px;
+    }
+
+
+}
+
+.push-question-close {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.push-question {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    a {
+        color: #1F4D79;
+        font-weight: bold;
+    }
+
+    .user {
+        display: inline-flex;
+        position: relative;
+        align-items: center;
+        font-size: 14px;
+        border-radius: 6px;
+
+        margin-left: 10px;
+        margin-right: 10px;
+        white-space: nowrap;
+
+        b, i {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        i {
+            font-weight: normal;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .user-avatar {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 10px;
+    }
+
+    .company-avatar {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media all and (max-width: breakpoint-max(lg)) {
+    .push-question-actions {
+        flex-direction: column;
+
+        a {
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+
+}

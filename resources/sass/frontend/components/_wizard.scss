@@ -1,0 +1,50 @@
+.wizard-btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .btn{
+        border-radius: 50rem !important;
+        padding: 16px 33px;
+    }
+
+    .btn-back{
+        border-radius: 50%;
+        padding: 0;
+        width: 55px;
+        height: 55px;
+        text-align: center;
+        line-height: 51px;
+    }
+
+
+    .btn-publish{
+        svg{
+            path{
+                fill: #ffffff;
+            }
+        }
+    }
+}
+
+.wizard-back{
+    display: flex;
+    align-items: center;
+    color: #90A4B7;
+    font-weight: 600;
+    font-size: 14px;
+
+    .btn-back{
+        svg{
+            margin-left: 1px;
+        }
+    }
+
+    &:hover{
+        text-decoration: none;
+        color: $btn-secondary-hover;
+        .btn-back{
+            border-color: $btn-secondary-hover;
+        }
+    }
+}

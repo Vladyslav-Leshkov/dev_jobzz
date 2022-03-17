@@ -1,0 +1,68 @@
+//================================================================================================================
+//Страница Создание профиля шаг 1
+.options-profile {
+   // .options-profile__checkbox
+   &__radio {
+      position: relative;
+   }
+   //options-profile__items
+   &__items {
+      width: 300px;
+      @media (max-width: 400px) {
+         width: 100%;
+      }
+      label {
+         margin-top: 0;
+         color: $primary80;
+         &::before {
+            top: 1px;
+         }
+      }
+   }
+}
+
+.option {
+   position: relative;
+   // .option__item
+   &__item {
+      display: none;
+   }
+   // .option__radio
+   &__radio {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      cursor: pointer;
+      color: #2a4b5d;
+      margin: 2px 0 14px 30px;
+      //letter-spacing: -0.5px;
+      &::before {
+         content: "";
+         width: 20px;
+         height: 20px;
+         border: 1px solid $primary50;
+         border-radius: 50%;
+         display: inline-block;
+         position: absolute;
+         top: 0;
+         left: 0;
+         margin-right: 7px;
+         z-index: 50;
+         @media (max-width: 407px) {
+            top: 5px;
+         }
+      }
+   }
+}
+.options-profile__sub {
+   label {
+      color: $font4;
+   }
+}
+.option__item:checked + .option__radio::before {
+   background: url("/images/icons/radio.svg") 50% no-repeat;
+}
+
+.radio-black:checked + .option__radio::before {
+   background: url("/images/icons/radio-black.svg") 50% no-repeat;
+}

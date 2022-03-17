@@ -1,0 +1,130 @@
+.process-section-title{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: flex-end;
+
+    &:before{
+        position: absolute;
+        content: '';
+        z-index: -1;
+        height: 1px;
+        background:  #D9ECFD;
+        bottom: 7px;
+        width: 100%;
+        left: 0;
+    }
+
+    .home-section-title {
+        background: #fff;
+        padding-right: 10px;
+    }
+}
+
+.bg-light {
+    .process-section-title {
+        &:before {
+            z-index: 1;
+        }
+
+        .home-section-title {
+            background: #F2F7FB;
+            z-index: 2;
+        }
+
+        .process-section-tabs {
+            z-index: 2;
+
+            .nav-link {
+                &.active {
+                    background: #F2F7FB;
+                    border-color: #D9ECFD #D9ECFD #F2F7FB;
+                }
+            }
+        }
+    }
+}
+
+.process-section-tabs {
+    border-bottom: 0 none;
+    margin-bottom: 8px;
+    margin-right: 15px;
+
+    .nav-link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        color: #8fa7bd;
+        padding: 10px 70px;
+
+        &:hover {
+            text-decoration: none;
+            border-color: transparent transparent transparent;
+            color: #439FF4;
+        }
+
+        &.active {
+            border-color: #D9ECFD #D9ECFD #fff;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            color: #439FF4;
+        }
+
+
+    }
+}
+
+
+@media all and (max-width: breakpoint-max(md)) {
+    .process-section-title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .process-section-tabs {
+        width: 100%;
+        justify-content: stretch;
+
+        .nav-item {
+            flex: 1;
+        }
+
+        .nav-link {
+            width: 100%;
+            padding: 10px 25px;
+            text-align: center;
+        }
+    }
+
+    .process-page__items2 {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .process-page__item2 {
+        width: auto;
+    }
+
+    .process-page__column2 {
+        flex: 1;
+        margin: 0;
+        padding: 30px 0;
+        border-bottom: 1px solid #D9ECFD;
+    }
+
+    .process-page__text2 {
+        margin-top: 25px;
+    }
+
+    .process-page__subtitle2 {
+        width: auto;
+    }
+
+    .process-page__icon2 {
+        display: none;
+    }
+
+    .item2-process__image {
+        text-align: center;
+    }
+}

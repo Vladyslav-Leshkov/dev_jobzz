@@ -1,0 +1,421 @@
+.items-vacancies {
+   // .items-vacancies__cards
+   &__cards {
+      margin: 54px 10px 65px 27px;
+      @media (max-width: 1200px) {
+         margin: 54px 0px 65px 17px;
+      }
+      @media (max-width: 1130px) {
+         margin: 54px 0px 65px 10px;
+      }
+      @media (max-width: 992px) {
+         margin: 54px 0px 65px 0px;
+         @include adaptiv-value("margin-bottom", 79, 30, 1);
+         padding: 0px;
+      }
+   }
+}
+
+.row {
+   position: relative;
+}
+
+.col-vacancies {
+   img {
+      width: 95px;
+      height: 95px;
+      border-radius: 8px;
+      object-fit: cover;
+      @media (max-width: 576px) {
+         width: 100%;
+         height: 250px;
+      }
+      &::before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 48px;
+         height: 48px;
+         border: 1px solid #376694;
+         border-radius: 50%;
+         background-image: url("data:image/svg+xml,%0A%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M15.8037 14.8883L12.4468 11.5095C12.1634 11.8365 11.8582 12.1635 11.5312 12.4251L14.8882 15.8038C15.019 15.9346 15.1934 16 15.3459 16C15.4985 16 15.6729 15.9346 15.8037 15.8038C16.0653 15.564 16.0653 15.1498 15.8037 14.8883Z' fill='white'/%3E%3Cpath d='M12.534 11.5967C13.5586 10.376 14.1689 8.78473 14.1689 7.08447C14.1689 3.18258 10.9864 0 7.08447 0C3.18258 0 0 3.18258 0 7.08447C0 10.9864 3.18258 14.1689 7.08447 14.1689C8.80651 14.1689 10.376 13.5586 11.5967 12.534C11.9455 12.2507 12.2507 11.9455 12.534 11.5967ZM1.3079 7.08447C1.3079 3.90189 3.90189 1.3079 7.08447 1.3079C10.267 1.3079 12.861 3.90189 12.861 7.08447C12.861 10.267 10.267 12.861 7.08447 12.861C3.90189 12.861 1.3079 10.267 1.3079 7.08447Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='16' height='16' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+         background-repeat: no-repeat;
+         background-position: 50%;
+         margin: 12px 10px 0 15px;
+         padding: 10.9px 19px;
+      }
+   }
+}
+.card-name {
+   margin: 18px auto 0px -8px;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 20px;
+   text-align: center;
+   letter-spacing: -0.02em;
+   color: $font1;
+   max-width: 110px;
+   @media (max-width: 576px) {
+      margin: 18px auto 0px auto;
+   }
+}
+.card-star {
+   display: flex;
+   flex-direction: column;
+   &::before {
+      content: "";
+      position: absolute;
+      top: 87px;
+      left: 22px;
+      width: 24px;
+      height: 24px;
+      background: $primary20;
+      border: 1px solid #d9ecfd;
+      border-radius: 50%;
+      background-image: url("data:image/svg+xml,%0A%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.9635 5.37035C13.8719 5.08687 13.6204 4.88552 13.3229 4.85871L9.28216 4.49181L7.68432 0.751919C7.56651 0.477834 7.29819 0.300415 7.00007 0.300415C6.70195 0.300415 6.43364 0.477834 6.31582 0.75256L4.71798 4.49181L0.67656 4.85871C0.379616 4.88617 0.128816 5.08687 0.0366355 5.37035C-0.0555452 5.65384 0.0295858 5.96478 0.254216 6.16078L3.30857 8.83947L2.40791 12.8069C2.34201 13.0986 2.45523 13.4001 2.69727 13.5751C2.82737 13.6691 2.97958 13.7169 3.13307 13.7169C3.26542 13.7169 3.39669 13.6813 3.51451 13.6108L7.00007 11.5276L10.4844 13.6108C10.7393 13.7641 11.0607 13.7501 11.3022 13.5751C11.5444 13.3996 11.6575 13.0979 11.5916 12.8069L10.6909 8.83947L13.7453 6.16131C13.9699 5.96478 14.0557 5.65437 13.9635 5.37035Z' fill='%23FFC107'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: 50%;
+      margin: 12px 10px 0 25px;
+      padding: 5.9px 11px;
+      @media (max-width: 576px) {
+         top: 243px;
+         left: 44%;
+      }
+      @media (max-width: 460px) {
+         left: 42%;
+      }
+      @media (max-width: 375px) {
+         left: 40%;
+      }
+   }
+}
+.page-my-vacancies__star {
+   &::before {
+      left: 42px;
+      top: 114px;
+   }
+}
+.card-post {
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 20px;
+   color: $font4;
+   text-align: center;
+   margin-left: -5px;
+}
+
+.card-body {
+   padding: 40px 30px 20px 50px;
+   @media (max-width: 701px) {
+      padding: 25px 30px 20px 20px;
+   }
+}
+.card-body-help {
+   padding: 32px 32px 30px 32px;
+   @media (max-width: 450px) {
+      padding: 12px;
+   }
+}
+.card-items {
+   padding: 10px 32px 40px 32px;
+   @media (max-width: 801px) {
+      padding: 10px 12px 40px 12px;
+   }
+   @media (max-width: 701px) {
+      margin-left: 0px;
+   }
+   @media (max-width: 576px) {
+      margin-left: 12px;
+   }
+}
+.card-item {
+   display: flex;
+   justify-content: space-between;
+}
+.card-info {
+   display: inline-block;
+   padding: 5px 10px 5px 6px;
+   background: #daf8f0;
+   border-radius: 4px;
+   font-style: italic;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 15px;
+   color: $secondary70;
+   span {
+      font-weight: 600;
+      border-right: 1px solid #9fd5c6;
+      padding-right: 6px;
+      margin-right: 6px;
+   }
+}
+
+.card-data {
+   font-weight: 500;
+   font-size: 12px;
+   color: $font4;
+   margin: 0px 0 8px 0;
+}
+.card-left .card-data {
+   margin-bottom: 11px;
+}
+.card-title {
+   @include adaptiv-font(32, 24, 1);
+   line-height: 28 / 32 * 100%;
+   font-weight: 600;
+   letter-spacing: -0.01em;
+   color: $font1;
+}
+.card-blocks {
+   display: flex;
+   @media (max-width: 400px) {
+      flex-direction: column;
+   }
+}
+.card__border {
+   border-top: 1px solid #d9ecfd;
+}
+
+.card-vacanc,
+.card-location,
+.card-experience,
+.card-level,
+.card-add {
+   color: $font4;
+   span {
+      color: $font1;
+   }
+   a {
+      color: $primary80;
+      font-size: 15px;
+      font-weight: 600;
+      &:hover {
+         color: $font1;
+      }
+   }
+}
+
+.card-vacanc,
+.card-location,
+.card-experience,
+.card-level,
+.card-add,
+.card-salary {
+   display: flex;
+   flex-direction: column;
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 18px;
+   @media (max-width: 400px) {
+      margin-bottom: 15px;
+      &:last-child {
+         margin-bottom: 0px;
+      }
+   }
+   span {
+      margin-top: 1px;
+      font-weight: 600;
+      @include adaptiv-font(16, 13, 1);
+      line-height: 24 / 16 * 100%;
+      letter-spacing: -0.02em;
+   }
+}
+
+.card-experience {
+   border-top: none;
+   border-bottom: none;
+   @media (max-width: 400px) {
+      border: none;
+      padding: 0px;
+   }
+}
+.card-location {
+   margin-right: 19px;
+}
+.happy-loc,
+.card-salary {
+   margin-left: 19px;
+}
+.card-level {
+   margin-left: 15px;
+   @media (max-width: 400px) {
+      margin-left: 0px;
+   }
+}
+
+.card-salary {
+   color: $secondary70;
+   span {
+      color: $secondary70;
+   }
+}
+
+.br-right {
+   border-right: 1px solid #d9ecfd;
+   padding: 0px 20px 0 0px;
+   @media (max-width: 400px) {
+      border: none;
+   }
+}
+span.pink {
+   color: #ff36ec;
+}
+div.ad-br {
+   @media (max-width: 1199px) {
+      border: none;
+      margin-bottom: 15px;
+   }
+   @media (max-width: 992px) {
+      border-right: 1px solid #d9ecfd;
+      margin-bottom: 0px;
+   }
+   @media (max-width: 768px) {
+      border: none;
+      margin-bottom: 15px;
+   }
+}
+.ad-m {
+   @media (max-width: 1199px) {
+      margin-left: 0;
+   }
+   @media (max-width: 992px) {
+      margin-left: 19px;
+   }
+   @media (max-width: 768px) {
+      margin-left: 0;
+   }
+}
+
+.card-right {
+   img {
+      width: 128px;
+      object-fit: contain;
+      @media (max-width: 1150px) {
+         width: 80px;
+         height: 80px;
+      }
+
+      @media (max-width: 576px) {
+         display: none;
+      }
+   }
+   margin-right: 15px;
+}
+.card-happy-right {
+   img {
+      width: 78px;
+      height: 78px;
+      object-fit: contain;
+   }
+}
+.card-text {
+   font-family: "Roboto", sans-serif;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 24px;
+   color: $font1;
+   p {
+      margin-bottom: 25px;
+      &:last-child {
+         margin-bottom: 10px;
+      }
+      margin-right: 20px;
+   }
+   // .card-text__small
+   &__small {
+      font-size: 15px;
+      color: $font3;
+   }
+}
+
+.happy-vacanc,
+.happy-loc,
+.happy-experience,
+.happy-level {
+   @media (max-width: 620px) {
+      margin-bottom: 10px;
+      margin-left: 0;
+      border: none;
+      padding: 0px;
+   }
+}
+.happy-card-mt {
+   span {
+      font-size: 14px;
+      line-height: 25px;
+      color: $font4;
+   }
+   @media (max-width: 620px) {
+      position: relative;
+      top: 0px;
+      //margin-top: 20px;
+   }
+   @media (max-width: 601px) {
+      top: 20px;
+      &:last-child {
+         padding-bottom: 2rem;
+      }
+   }
+   .card-title {
+      font-weight: 600;
+      font-size: 15px;
+   }
+}
+
+//==========================================================================================================================
+//checkbox в карточке
+.card-subtitle {
+   padding: 10px 0px;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 28px;
+   letter-spacing: -0.02em;
+   color: $font1;
+}
+
+.item-filter {
+   // .item-filter__buttons-bg
+   &__buttons-bg {
+      display: flex;
+      flex-wrap: wrap;
+      label,
+      span {
+         background: $primary20;
+         border-radius: 32px;
+         border: 1px solid #d9ecfd;
+         padding: 10px 19px;
+         color: $primary80;
+         font-weight: 600;
+         font-family: "Montserrat";
+         font-size: 12px;
+         transition: all 300ms;
+         &.active {
+            color: $primary20;
+            background: $primary80;
+         }
+         &:hover,
+         &.focus {
+            color: $primary80;
+            background: $primary40;
+         }
+         margin-right: 8px;
+         margin-bottom: 8px;
+      }
+      .custom-check {
+         input[type="checkbox"] {
+            display: none;
+            &:checked + label {
+               color: $primary20;
+               background: $primary80;
+            }
+         }
+      }
+   }
+}
+
+//==========================================================================================================================
+//Отступ
+.card-indent {
+   @include adaptiv-value("margin-bottom", 50, 30, 1);
+}

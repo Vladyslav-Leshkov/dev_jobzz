@@ -1,0 +1,372 @@
+// Fonts
+$font-family-sans-serif: "Inter", "Helvetica Neue", Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 600 !default;
+$font-size-base: .875rem !default;
+$font-size-lg: .925rem !default;
+$font-size-sm: .75rem !default;
+$small-font-size: 80% !default;
+
+// Spacer
+$spacer: 1rem !default;
+
+$spacers: (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    6: ($spacer * 4.5),
+    7: ($spacer * 6)
+) !default;
+
+// Grid breakpoints
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1440px
+) !default;
+
+// Grid gutter
+$grid-gutter-width: 24px;
+
+// Grid containers
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1200px
+) !default;
+
+$container-padding-x: .75rem !default;
+
+// Options
+$enable-validation-icons: false !default;
+
+// Transitions
+$transition-base: all .35s ease-in-out !default;
+
+// Options
+$enable-rfs: false !default;
+$enable-negative-margins: true !default;
+
+// Theme colors
+$blue: #3B7DDD !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #28a745 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$primary: $blue !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-900 !default;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark
+) !default;
+
+// Social colors
+$social-colors: (
+    "facebook": #3b5998,
+    "twitter": #1da1f2,
+    "google": #dc4e41,
+    "youtube": #f00,
+    "vimeo": #1ab7ea,
+    "dribbble": #ea4c89,
+    "github": #181717,
+    "instagram": #e4405f,
+    "pinterest": #bd081c,
+    "flickr": #0063dc,
+    "bitbucket": #0052cc
+) !default;
+
+// Body
+$body-bg: #FFFFFF !default;
+$body-color: $gray-700 !default;
+
+// Links
+$link-decoration: none !default;
+$link-hover-decoration: underline !default;
+
+// Common
+$border-width: 1px !default;
+
+// Fonts
+$line-height-base: 1.5 !default;
+$line-height-lg: 1.5 !default;
+$line-height-sm: 1.5 !default;
+
+// Headings
+$h1-font-size: $font-size-base * 2 !default;
+$h2-font-size: $font-size-base * 1.75 !default;
+$h3-font-size: $font-size-base * 1.5 !default;
+$h4-font-size: $font-size-base * 1.25 !default;
+$h5-font-size: $font-size-base !default;
+$h6-font-size: $font-size-base !default;
+$headings-color: $black !default;
+$headings-font-weight: 400 !default;
+
+// Displays
+$display-font-sizes: (
+    1: 6rem,
+    2: 5.5rem,
+    3: 4.5rem,
+    4: 3.5rem,
+    5: 3rem,
+    6: 2.5rem
+) !default;
+
+// Progress
+$progress-height: 1rem !default;
+$progress-height-sm: .5rem !default;
+$progress-height-lg: 1.5rem !default;
+
+// Shadows
+$box-shadow-sm: 0 0.05rem 0.2rem rgba($black, .05) !default;
+$box-shadow: 0 0.1rem 0.2rem rgba($black, .05) !default;
+$box-shadow-lg: 0 0.2rem 0.2rem rgba($black, .05) !default;
+
+// Border radius
+$border-radius-sm: .1rem !default;
+$border-radius: .2rem !default;
+$border-radius-lg: .3rem !default;
+
+// Navbar
+$navbar-padding-y: $spacer*0.875 !default;
+$navbar-padding-x: $spacer*1.375 !default;
+$navbar-nav-link-padding-x: .5rem !default;
+$navbar-border-bottom: 0 !default;
+$navbar-box-shadow: 0 0 2rem 0 rgba($dark, .1) !default;
+
+// Navbar brand
+$navbar-brand-padding-y: $spacer*0.875 !default;
+$navbar-brand-padding-x: 0 !default;
+$navbar-brand-color: $gray-100 !default;
+$navbar-brand-font-weight: $font-weight-normal !default;
+$navbar-brand-font-size: 1.15rem !default;
+$navbar-brand-icon-color: $primary !default;
+
+$navbar-bg: $white !default;
+
+// Footer
+$footer-bg: $white !default;
+
+// Alerts
+$alert-padding-y: .95rem !default;
+$alert-padding-x: .95rem !default;
+$alert-border-width: 0 !default;
+
+// List group
+$list-group-item-padding-y: .75rem !default;
+$list-group-item-padding-x: 1.25rem !default;
+
+// Forms
+$input-bg: $white !default;
+$input-disabled-bg: $gray-200 !default;
+$input-color: $gray-700 !default;
+$input-btn-border-width: $border-width !default;
+$input-btn-line-height: $line-height-base !default;
+$input-btn-line-height-sm: $line-height-sm !default;
+$input-btn-line-height-lg: $line-height-lg !default;
+$input-btn-focus-width: .2rem !default;
+$input-btn-padding-y: .25rem !default;
+$input-btn-padding-y-sm: .15rem !default;
+$input-btn-padding-y-lg: .35rem !default;
+$input-btn-padding-x: .7rem !default;
+$input-border-width: $input-btn-border-width !default;
+$input-height-border: $input-border-width * 2 !default;
+$input-height-inner: ($font-size-base * $input-btn-line-height) + ($input-btn-padding-y * 2) !default;
+$input-height: calc(#{$input-height-inner} + #{$input-height-border}) !default;
+$input-height-inner-sm: ($font-size-sm * $input-btn-line-height-sm) + ($input-btn-padding-y-sm * 2) !default;
+$input-height-sm: calc(#{$input-height-inner-sm} + #{$input-height-border}) !default;
+$input-height-inner-lg: ($font-size-lg * $input-btn-line-height-lg) + ($input-btn-padding-y-lg * 2) !default;
+$input-height-lg: calc(#{$input-height-inner-lg} + #{$input-height-border}) !default;
+
+// Dropdowns
+$dropdown-link-color: $gray-700 !default;
+$dropdown-link-hover-bg: $gray-100 !default;
+$dropdown-item-padding-y: .35rem !default;
+$dropdown-item-padding-x: 1.5rem !default;
+
+// Cards
+$card-border-radius: .25rem !default;
+$card-inner-border-radius: $card-border-radius !default;
+$card-border-width: 0 !default;
+$card-border-color: transparent !default;
+$card-cap-bg: $white !default;
+$card-shadow: 0 0 .875rem 0 rgba($dark, 0.05) !default;
+$card-title-font-weight: $font-weight-normal !default;
+$card-spacer-y: 1.25rem !default;
+$card-spacer-x: 1.25rem !default;
+$card-cap-padding-y: 1rem !default;
+$card-cap-padding-x: $card-spacer-x !default;
+
+// Tables
+$table-cell-padding-y: .75rem !default;
+$table-cell-padding-x: .75rem !default;
+$table-cell-padding-y-sm: .3rem !default;
+$table-cell-padding-x-sm: .3rem !default;
+$table-striped-bg: $gray-100 !default;
+$table-hover-bg: rgba($black, .0375) !default;
+
+// Sidebar general
+$sidebar-width: 260px !default;
+$sidebar-transition: margin-left .35s ease-in-out, left .35s ease-in-out, margin-right .35s ease-in-out, right .35s ease-in-out !default;
+$sidebar-bg: #222E3C !default;
+
+// Sidebar brand
+$sidebar-brand-padding-y: 1.15rem !default;
+$sidebar-brand-padding-x: 1.5rem !default;
+$sidebar-brand-font-weight: $font-weight-bold !default;
+$sidebar-brand-font-size: 1.15rem !default;
+$sidebar-brand-color: $gray-100 !default;
+
+// Sidebar header
+$sidebar-header-padding: 1.5rem 1.5rem 0.375rem !default;
+$sidebar-header-font-size: $font-size-sm !default;
+$sidebar-header-color: $gray-400 !default;
+
+// Sidebar link
+$sidebar-link-padding: .625rem 1.625rem !default;
+$sidebar-link-font-weight: 400 !default;
+$sidebar-link-bg: #222E3C !default;
+$sidebar-link-color: rgba($gray-200, 0.5) !default;
+$sidebar-link-border-left-color: transparent !default;
+
+$sidebar-link-hover-font-weight: $font-weight-normal !default;
+$sidebar-link-hover-bg: #222E3C !default;
+$sidebar-link-hover-color: #{rgba($gray-200, 0.75)} !default;
+$sidebar-link-hover-border-left-color: transparent !default;
+
+$sidebar-link-active-font-weight: $font-weight-normal !default;
+$sidebar-link-active-bg: #{linear-gradient(90deg, rgba($primary,0.1) 0%, rgba($primary,0.0875) 50%, rgba($black, 0) 100%)} !default;
+$sidebar-link-active-color: $gray-200 !default;
+$sidebar-link-active-border-left-color: $primary !default;
+
+// Sidebar child link
+$sidebar-link-child-padding: .625rem 1.5rem .625rem 3.25rem !default;
+$sidebar-link-child-font-size: 90% !default;
+$sidebar-link-child-font-weight: 400 !default;
+
+$sidebar-link-child-color: $gray-500 !default;
+$sidebar-link-child-bg: transparent !default;
+$sidebar-link-child-hover-color: $gray-200 !default;
+$sidebar-link-child-hover-bg: transparent !default;
+$sidebar-link-child-active-color: #{lighten($primary, 5)} !default;
+$sidebar-link-child-active-bg: transparent !default;
+
+// Sidebar link icon
+$sidebar-link-icon-color: #{rgba($gray-200, 0.5)} !default;
+$sidebar-link-icon-hover-color: #{rgba($gray-200, 0.75)} !default;
+$sidebar-link-icon-active-color: $gray-200 !default;
+
+// Sidebar bottom
+$sidebar-cta-color: $gray-200 !default;
+$sidebar-cta-bg: #2B3947 !default;
+$sidebar-cta-padding: $spacer*1.5 !default;
+$sidebar-cta-margin: $spacer*1.75 !default;
+$sidebar-cta-border-radius: $border-radius-lg !default;
+
+// Transitions
+$transition-appearance: background .4s ease-in-out, color .4s ease-in-out !default;
+$transition-appearance-slow: background .6s ease-in-out, color .6s ease-in-out !default;
+$transition-appearance-fast: background .1s ease-in-out, color .1s ease-in-out !default;
+
+// Modals
+$modal-content-border-width: 0 !default;
+$modal-header-border-width: 1px !default;
+$modal-footer-border-width: 1px !default;
+$modal-xl: 1140px !default;
+$modal-lg: 900px !default;
+$modal-md: 600px !default;
+$modal-sm: 400px !default;
+$modal-transition: transform .25s ease-out !default;
+
+// Tabs
+$tab-content-padding: $spacer * 1.25 !default;
+$tab-content-box-shadow: 0 0.2rem 0.1rem -0.1rem rgba(0, 0, 0, 0.15) !default;
+$tab-content-border-radius: 0 0 $border-radius $border-radius !default;
+$tab-link-color: $gray-800 !default;
+$tab-link-padding: ($spacer * 0.75) $spacer !default;
+$tab-link-bg: transparent !default;
+$tab-link-active-color: $gray-800 !default;
+$tab-link-active-bg: $white !default;
+
+// Badges
+$badge-font-size: 80% !default;
+$badge-padding-y: .3em !default;
+$badge-padding-x: .45em !default;
+
+// Pagination
+$pagination-padding-y: .3rem !default;
+$pagination-padding-x: .75rem !default;
+$pagination-padding-y-sm: .15rem !default;
+$pagination-padding-x-sm: .5rem !default;
+$pagination-padding-y-lg: .35rem !default;
+$pagination-padding-x-lg: 1rem !default;
+$pagination-color: $gray-600 !default;
+$pagination-hover-color: $gray-800 !default;
+
+// Main
+$main-box-shadow: inset .75rem 0px 1.5rem 0px rgba($black, 0.075);
+
+// Content
+$content-padding-desktop: 2.5rem 2.5rem 1rem !default;
+$content-padding-mobile: 1.5rem 1.5rem .75rem !default;
+
+// Datetimepicker
+$bs-datetimepicker-active-bg: $primary !default;
+
+// Simplebar
+$simplebar-scrollbar-bg: $white !default;
+
+// Hamburger
+$hamburger-width-top: 24px !default;
+$hamburger-width-middle: 24px !default;
+$hamburger-width-bottom: 16px !default;
+
+// Font Awesome
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+
+$caret-background: url("data:image/svg+xml,%3Csvg width='6' height='4' viewBox='0 0 6 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.51821 3.76605C3.25903 4.07798 2.74097 4.07798 2.48179 3.76605L0.130902 0.936643C-0.189671 0.55082 0.115078 2.00779e-07 0.649112 2.47466e-07L5.35089 6.58509e-07C5.88492 7.05195e-07 6.18967 0.550821 5.8691 0.936644L3.51821 3.76605Z' fill='%23334E68'/%3E%3C/svg%3E%0A");
+$checked-background: url("data:image/svg+xml,%3Csvg width='14' height='11' viewBox='0 0 14 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.1486 0L14 1.85148L5.33932 10.5122L0 5.17296L1.85142 3.32149L5.33932 6.80927L12.1486 0Z' fill='%233D90DC'/%3E%3C/svg%3E ");
+$success-background: url("data:image/svg+xml,%3Csvg width='14' height='11' viewBox='0 0 14 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.1486 0L14 1.85148L5.33932 10.5122L0 5.17296L1.85142 3.32149L5.33932 6.80927L12.1486 0Z' fill='%2335AA8E'/%3E%3C/svg%3E ");
+$failed-background: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 0C3.14005 0 0 3.14005 0 7C0 10.86 3.14005 14 7 14C10.86 14 14 10.86 14 7C14 3.14005 10.86 0 7 0ZM9.57779 8.75288C9.80583 8.98103 9.80583 9.34964 9.57779 9.57779C9.46404 9.69154 9.31471 9.74869 9.16528 9.74869C9.01596 9.74869 8.86664 9.69154 8.75288 9.57779L7 7.8248L5.24712 9.57779C5.13336 9.69154 4.98404 9.74869 4.83472 9.74869C4.68529 9.74869 4.53596 9.69154 4.42221 9.57779C4.19417 9.34964 4.19417 8.98103 4.42221 8.75288L6.1752 7L4.42221 5.24712C4.19417 5.01897 4.19417 4.65036 4.42221 4.42221C4.65036 4.19417 5.01897 4.19417 5.24712 4.42221L7 6.1752L8.75288 4.42221C8.98103 4.19417 9.34964 4.19417 9.57779 4.42221C9.80583 4.65036 9.80583 5.01897 9.57779 5.24712L7.8248 7L9.57779 8.75288Z' fill='%23EB5D6E'/%3E%3C/svg%3E%0A");
+$search-background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M15.804 14.8883L12.447 11.5095C12.1636 11.8365 11.8585 12.1635 11.5315 12.4251L14.8884 15.8038C15.0192 15.9346 15.1936 16 15.3462 16C15.4988 16 15.6732 15.9346 15.8039 15.8038C16.0656 15.564 16.0656 15.1498 15.804 14.8883Z' fill='%23439FF4'/%3E%3Cpath d='M12.534 11.5967C13.5586 10.376 14.1689 8.78473 14.1689 7.08447C14.1689 3.18258 10.9864 0 7.08447 0C3.18258 0 0 3.18258 0 7.08447C0 10.9864 3.18258 14.1689 7.08447 14.1689C8.80651 14.1689 10.376 13.5586 11.5967 12.534C11.9455 12.2507 12.2507 11.9455 12.534 11.5967ZM1.3079 7.08447C1.3079 3.90189 3.90189 1.3079 7.08447 1.3079C10.267 1.3079 12.861 3.90189 12.861 7.08447C12.861 10.267 10.267 12.861 7.08447 12.861C3.90189 12.861 1.3079 10.267 1.3079 7.08447Z' fill='%23439FF4'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='16' height='16' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E ");
+$times-background: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.196871 1.16792C-0.0656236 0.905422 -0.0656236 0.468543 0.196871 0.196871C0.468543 -0.0656236 0.896244 -0.0656236 1.16792 0.196871L6.9948 6.03354L12.8315 0.196871C13.094 -0.0656236 13.5308 -0.0656236 13.7927 0.196871C14.0644 0.468543 14.0644 0.906034 13.7927 1.16792L7.96584 6.99541L13.7927 12.8321C14.0644 13.0946 14.0644 13.5315 13.7927 13.8031C13.5302 14.0656 13.0934 14.0656 12.8315 13.8031L6.9948 7.96646L1.16792 13.8031C0.896244 14.0656 0.468543 14.0656 0.196871 13.8031C-0.0656236 13.5315 -0.0656236 13.094 0.196871 12.8321L6.02375 6.99541L0.196871 1.16792Z' fill='%2350BFBF'/%3E%3C/svg%3E%0A");
+$times-background-white: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.196871 1.16792C-0.0656236 0.905422 -0.0656236 0.468543 0.196871 0.196871C0.468543 -0.0656236 0.896244 -0.0656236 1.16792 0.196871L6.9948 6.03354L12.8315 0.196871C13.094 -0.0656236 13.5308 -0.0656236 13.7927 0.196871C14.0644 0.468543 14.0644 0.906034 13.7927 1.16792L7.96584 6.99541L13.7927 12.8321C14.0644 13.0946 14.0644 13.5315 13.7927 13.8031C13.5302 14.0656 13.0934 14.0656 12.8315 13.8031L6.9948 7.96646L1.16792 13.8031C0.896244 14.0656 0.468543 14.0656 0.196871 13.8031C-0.0656236 13.5315 -0.0656236 13.094 0.196871 12.8321L6.02375 6.99541L0.196871 1.16792Z' fill='%23FFFFFF'/%3E%3C/svg%3E%0A");
+$avatar-background: url("data:image/svg+xml,%3Csvg width='30' height='34' viewBox='0 0 30 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.8765 18.3202C14.9117 18.3202 14.9469 18.3202 14.9892 18.3202C15.0033 18.3202 15.0173 18.3202 15.0314 18.3202C15.0525 18.3202 15.0807 18.3202 15.1018 18.3202C17.1648 18.2849 18.8334 17.5597 20.0656 16.1727C22.7763 13.117 22.3257 7.87865 22.2764 7.37875C22.1004 3.62601 20.3261 1.83061 18.8616 0.992752C17.7703 0.366121 16.4959 0.0281632 15.0737 0H15.0244C15.0173 0 15.0033 0 14.9962 0H14.954C14.1724 0 12.6375 0.126734 11.166 0.964589C9.68745 1.80244 7.88501 3.59785 7.70899 7.37875C7.6597 7.87865 7.20909 13.117 9.9198 16.1727C11.1449 17.5597 12.8136 18.2849 14.8765 18.3202ZM9.58888 7.55477C9.58888 7.53365 9.59592 7.51253 9.59592 7.49845C9.82827 2.4502 13.412 1.90806 14.9469 1.90806H14.9751C14.9892 1.90806 15.0103 1.90806 15.0314 1.90806C16.9324 1.9503 20.1642 2.72479 20.3824 7.49845C20.3824 7.51957 20.3824 7.54069 20.3895 7.55477C20.3965 7.60406 20.8894 12.3918 18.6504 14.9124C17.7632 15.9122 16.5804 16.4051 15.0244 16.4191C15.0103 16.4191 15.0033 16.4191 14.9892 16.4191C14.9751 16.4191 14.968 16.4191 14.954 16.4191C13.405 16.4051 12.2151 15.9122 11.335 14.9124C9.10306 12.4059 9.58184 7.59702 9.58888 7.55477Z' fill='%23439FF4'/%3E%3Cpath d='M29.4585 27.0086C29.4585 27.0015 29.4585 26.9945 29.4585 26.9875C29.4585 26.9311 29.4515 26.8748 29.4515 26.8114C29.4092 25.4174 29.3177 22.1575 26.262 21.1154C26.2409 21.1084 26.2127 21.1013 26.1916 21.0943C23.0162 20.2846 20.3759 18.454 20.3477 18.4329C19.9182 18.1301 19.3268 18.2357 19.024 18.6652C18.7213 19.0947 18.8269 19.6861 19.2564 19.9889C19.3761 20.0734 22.1783 22.0237 25.6846 22.9249C27.3251 23.5093 27.5082 25.2625 27.5575 26.8678C27.5575 26.9311 27.5575 26.9875 27.5645 27.0438C27.5716 27.6775 27.5293 28.6561 27.4167 29.2194C26.2761 29.8671 21.8052 32.1061 15.0037 32.1061C8.2305 32.1061 3.73144 29.8601 2.58379 29.2123C2.47113 28.6491 2.42185 27.6704 2.43593 27.0367C2.43593 26.9804 2.44297 26.9241 2.44297 26.8607C2.49226 25.2554 2.67532 23.5023 4.31582 22.9179C7.82214 22.0167 10.6244 20.0593 10.7441 19.9819C11.1736 19.6791 11.2792 19.0877 10.9764 18.6582C10.6737 18.2287 10.0822 18.1231 9.65275 18.4258C9.62458 18.447 6.99836 20.2776 3.80888 21.0873C3.78072 21.0943 3.7596 21.1013 3.73848 21.1084C0.682771 22.1575 0.591241 25.4174 0.548996 26.8044C0.548996 26.8678 0.548996 26.9241 0.541955 26.9804C0.541955 26.9875 0.541955 26.9945 0.541955 27.0015C0.534915 27.3677 0.527874 29.2476 0.901036 30.191C0.971444 30.3741 1.09818 30.529 1.26716 30.6346C1.47838 30.7754 6.54071 34.0001 15.0108 34.0001C23.4809 34.0001 28.5432 30.7684 28.7544 30.6346C28.9164 30.529 29.0501 30.3741 29.1205 30.191C29.4726 29.2546 29.4655 27.3747 29.4585 27.0086Z' fill='%23439FF4'/%3E%3C/svg%3E%0A");

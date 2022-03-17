@@ -1,0 +1,20 @@
+.toast {
+
+    &.bg-success {
+        background: #35AA8E !important;
+        color: #fff;
+    }
+
+    &.bg-danger {
+        background: #EB5D6E !important;
+        color: #fff;
+    }
+
+
+}
+
+@media all and (min-width: 769px) {
+    .toast {
+        font-size: 18px !important;
+    }
+}

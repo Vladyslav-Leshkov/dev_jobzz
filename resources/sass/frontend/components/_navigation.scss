@@ -1,0 +1,77 @@
+.navigation {
+   margin-top: 66px;
+
+   // .navigation__body
+   &__body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      ul {
+         padding-left: 0px;
+         margin-bottom: 0px;
+      }
+      @media (max-width: 992px) {
+         margin-left: 0;
+      }
+   }
+   // .navigation__list
+   &__list {
+      display: flex;
+      li {
+         width: 48px;
+         height: 48px;
+         list-style-type: none;
+         margin-right: 5px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+         &:last-child {
+            margin-right: 0px;
+         }
+
+         &.active {
+            width: 48px;
+            height: 48px;
+            border: 1px solid #d9ecfd;
+            border-radius: 50%;
+         }
+      }
+      a {
+         font-weight: 600;
+         font-size: 16px;
+         line-height: 24px;
+         letter-spacing: -0.02em;
+         color: $font1;
+         text-decoration: none;
+      }
+   }
+}
+.arrow-left {
+   a {
+      &::before {
+         content: "";
+         background-image: url("data:image/svg+xml,%0A%3Csvg width='8' height='12' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.66667 1.58986e-08L8 1.58129L3.17742 6.00027L8 10.4193L6.66667 12L5.4839e-07 6.00027L6.66667 1.58986e-08Z' fill='%239BA5BA'/%3E%3C/svg%3E%0A");
+         background-repeat: no-repeat;
+         background-position: 50%;
+         padding: 10.9px 19px;
+      }
+   }
+}
+.arrow-right {
+   a {
+      &::before {
+         content: "";
+         background-image: url("data:image/svg+xml,%0A%3Csvg width='8' height='12' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.33333 12L1.88566e-08 10.4187L4.82258 5.99973L1.24248e-07 1.58074L1.33333 1.58998e-08L8 5.99973L1.33333 12Z' fill='%23334E68'/%3E%3C/svg%3E%0A");
+         background-repeat: no-repeat;
+         background-position: 50%;
+         padding: 10.9px 19px;
+      }
+   }
+}
+
+li.dn-400 {
+   @media (max-width: 400px) {
+      display: none;
+   }
+}

@@ -1,0 +1,98 @@
+.show-bg.show {
+   background: rgba(255, 255, 255, 0.8);
+   z-index: 100;
+}
+.header {
+   // .header__container
+   &__container.show {
+      background: rgba(255, 255, 255, 0.8);
+      z-index: 100;
+   }
+   // .header__left
+   &__left {
+      display: flex;
+      align-items: center;
+      flex: 0 1 30%;
+      @media (max-width: 1200px) {
+         padding: 20px;
+      }
+      @media (max-width: 780px) {
+         padding: 20px 20px 25px 20px;
+      }
+      .btn-bg-none {
+         @media (max-width: 1280px) {
+            padding: 0px 10px 0px 0px;
+         }
+      }
+      .use-header__link {
+         @media (max-width: 1200px) {
+            align-self: flex-start;
+         }
+         @media (max-width: 780px) {
+            margin-top: 25px;
+         }
+      }
+   }
+   // .header__right
+   &__right {
+      display: flex;
+      align-items: center;
+      flex: 0 1 70%;
+      justify-content: flex-end;
+      .btn-bg-none {
+         padding: 0px 10px 0px 0px;
+      }
+      @media (max-width: 1200px) {
+         padding: 20px;
+      }
+      @media (max-width: 780px) {
+         padding: 0px 20px 25px 20px;
+      }
+   }
+   &__left,
+   &__right {
+      @media (max-width: 1200px) {
+         flex: 0 1 100%;
+         justify-content: space-between;
+      }
+      @media (max-width: 780px) {
+         display: flex;
+         flex-direction: column;
+         align-self: flex-start;
+         align-items: flex-start;
+      }
+   }
+   //// header__navbar
+   //&__navbar {
+   //   display: flex;
+   //   flex: 0 1 80%;
+   //}
+}
+
+//=============================================================================================================================
+//Кнопка цены
+
+//=============================================================================================================================
+//Кнопка создать вакансию
+
+.btn-create {
+   a {
+      font-size: 16px;
+      line-height: 28px;
+      color: $font1;
+   }
+
+   border: 1px solid $primary90;
+   border-radius: 100px;
+   padding: 10px 23px;
+   margin-right: 18px;
+   &:hover {
+      opacity: 0.8;
+   }
+   @media (max-width: 1200px) {
+      width: 210px;
+   }
+   @media (max-width: 780px) {
+      margin: 25px 0px;
+   }
+}

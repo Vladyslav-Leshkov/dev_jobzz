@@ -1,0 +1,239 @@
+.popup {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   overflow-y: auto;
+   padding: 10px;
+   // .popup__container
+   &__container {
+      padding: 7px;
+      border: 1px solid #b1cfe8;
+      box-sizing: border-box;
+      border-radius: 8px;
+      width: 829px;
+      @media (max-width: 850px) {
+         width: 100%;
+      }
+   }
+   // .popup__title
+   &__title {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 28px;
+      letter-spacing: -0.02em;
+      color: $font1;
+      margin-top: 25px;
+      margin-bottom: 35px;
+   }
+   // .popup__main
+   &__main {
+      @media (max-width: 650px) {
+         display: flex;
+         flex-direction: column;
+      }
+   }
+}
+.form-resume {
+   position: absolute;
+   top: -8px;
+   left: 18px;
+   font-weight: 500;
+   font-size: 10px;
+   line-height: 18px;
+   color: $primary80;
+   background: $primary20;
+   letter-spacing: 0.005em;
+   padding: 0 5px;
+}
+.popup-form {
+   margin-bottom: -10px;
+   position: relative;
+   label {
+      position: absolute;
+      top: -8px;
+      left: 18px;
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 18px;
+      color: #b1cfe8;
+      background: $primary20;
+      letter-spacing: 0.005em;
+      padding: 0 5px;
+   }
+   input {
+      border: 1px solid #b1cfe8;
+      border-radius: 8px;
+      font-weight: 500;
+      color: $font1;
+      font-size: 16px;
+      padding-left: 25px;
+      &::placeholder {
+         color: #b1cfe8;
+         font-weight: 500;
+         font-size: 16px;
+         font-family: "Montserrat", sans-serif;
+      }
+   }
+   button {
+      position: absolute;
+      top: 33%;
+      right: 4%;
+   }
+
+    button.btn-close {
+        position: absolute;
+        top: 33%;
+        right: 4%;
+    }
+}
+
+label.popup-active {
+   color: $primary80;
+}
+
+button.close-contact {
+   top: 21%;
+}
+.popup-resume {
+   position: relative;
+   border: 1px solid #b1cfe8;
+   border-radius: 8px;
+   height: 46.23px;
+   padding: 12.7px 0px 12.7px 60px;
+}
+.form-no-br {
+   border: none;
+   input {
+      border: none;
+      margin-bottom: 20px;
+   }
+}
+label.resume {
+   span.file-active {
+      color: $font1;
+      font-weight: 500;
+      font-size: 14px;
+      font-family: "Montserrat", sans-serif;
+
+      &::before {
+         content: "";
+         position: absolute;
+         top: 19%;
+         left: 20px;
+         width: 32px;
+         height: 32px;
+         border-radius: 50%;
+         background: $primary60;
+         padding: 16px 16px;
+      }
+   }
+   img {
+      position: absolute;
+      top: 37%;
+      left: 29px;
+   }
+}
+label.resume-popup {
+   span {
+      &::before {
+         top: 18%;
+      }
+   }
+}
+
+button.btn-close-rt {
+   transform: rotate(45deg);
+}
+input.input-pl {
+   span {
+      color: #b1cfe8;
+   }
+   @media (max-width: 350px) {
+      padding-left: 20px;
+   }
+}
+.my-contacts {
+   // .my-contacts__forms
+   &__forms {
+      padding-right: 10px;
+      @media (max-width: 650px) {
+         width: 100%;
+      }
+   }
+}
+
+//===============================================================================================================================
+//Мои сообщения - форма
+
+.filled {
+   position: relative;
+   span.input-active {
+      &::before {
+         content: "";
+         width: 20px;
+         height: 20px;
+         border: 1px solid $primary50;
+         display: inline-block;
+         position: absolute;
+         top: 13px;
+         right: 8px;
+         margin-right: 7px;
+         background: $primary20;
+         background-image: url("data:image/svg+xml,%0A%3Csvg width='14' height='11' viewBox='0 0 14 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.1486 0L14 1.85148L5.33932 10.5122L0 5.17296L1.85142 3.32149L5.33932 6.80927L12.1486 0Z' fill='%233D90DC'/%3E%3C/svg%3E%0A");
+         background-repeat: no-repeat;
+         background-position: 50%;
+      }
+   }
+}
+
+.nofilled {
+   position: relative;
+   span {
+      &::before {
+         content: "";
+         width: 20px;
+         height: 20px;
+         border: 1px solid $primary50;
+         display: inline-block;
+         position: absolute;
+         top: 13px;
+         right: 8px;
+         margin-right: 7px;
+         background: $primary20;
+      }
+   }
+}
+
+.option {
+   position: relative;
+   // .option__item
+   &__item {
+      display: none;
+   }
+   // .option__label
+   &__label {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      cursor: pointer;
+      color: #2a4b5d;
+      margin: 0px 0 14px 30px;
+      //letter-spacing: -0.5px;
+      &::before {
+         content: "";
+         width: 20px;
+         height: 20px;
+         border: 1px solid $primary50;
+         display: inline-block;
+         position: absolute;
+         top: 0;
+         left: 0;
+         margin-right: 7px;
+         @media (max-width: 407px) {
+            top: 5px;
+         }
+      }
+   }
+  }

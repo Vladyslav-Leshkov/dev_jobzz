@@ -1,0 +1,109 @@
+.invoice {
+     //invoice__body
+   &__body {
+      max-width: 850px;
+   }
+}
+
+//==============================================================================================================================
+
+.invoice {
+   // .invoice__total
+   &__total {
+      font-weight: 600;
+      @include adaptiv-font(24, 18, 1);
+      line-height: 26px;
+      letter-spacing: -0.02em;
+      color: $font1;
+      span {
+         font-weight: 600;
+         @include adaptiv-font(36, 24, 1);
+         line-height: 24px;
+         letter-spacing: -0.02em;
+         padding-left: 20px;
+         color: $secondary70;
+      }
+   }
+}
+
+//==============================================================================================================================
+//Forma
+
+.invoice {
+   // .invoice__requisites
+   &__requisites {
+      background: #f2f7fb;
+      border: 1px solid #d9ecfd;
+      box-sizing: border-box;
+      border-radius: 8px;
+   }
+}
+.requisites {
+   // .requisites__body
+   &__body {
+      padding: 55px 45px 42px 45px;
+      @media (max-width: 455px) {
+         padding: 40px 15px 40px 15px;
+      }
+   }
+   // .requisites__form
+   &__form {
+      label {
+         font-size: 12px;
+         line-height: 15px;
+         color: $font4;
+      }
+      input {
+         background: #f2f7fb;
+         border-bottom: 2px solid #b1cfe8;
+      }
+   }
+}
+input.requisites-input {
+   border-radius: 0px;
+   padding-left: 0px;
+   padding-bottom: 0px;
+   &:focus {
+      background: #f2f7fb;
+   }
+}
+
+.invoice__text {
+   max-width: 700px;
+   font-size: 15px;
+   line-height: 24px;
+   color: $font4;
+}
+
+//==============================================================================================================================
+//Всплывающий список
+.country-btn {
+   background-image: url("/images/icons/arrow-down.svg");
+   background-repeat: no-repeat;
+   background-position: 96%;
+   text-align: left;
+   padding-left: 26px;
+}
+//==============================================================================================================================
+//Книпки
+
+.invoice-publish {
+   @media (max-width: 500px) {
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+   }
+}
+
+.invoice-publish > .btn-publish {
+   @media (max-width: 500px) {
+      margin-top: 40px;
+      justify-content: start;
+   }
+}
+.invoice-publish .btn-publish__items {
+   @media (max-width: 500px) {
+      justify-content: start;
+   }
+}
+

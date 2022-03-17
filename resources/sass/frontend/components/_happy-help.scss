@@ -1,0 +1,276 @@
+.my-contacts__title {
+   font-weight: 600;
+   font-size: 32px;
+   line-height: 32px;
+   color: $font1;
+   margin-top: -12px;
+   @include adaptiv-value("margin-bottom", 50, 30, 1);
+}
+
+.help-bg {
+   @include adaptiv-value("margin-bottom", 65, 30, 1);
+}
+.col-image {
+   img {
+      width: 137px;
+      height: 137px;
+      border-radius: 8px;
+      object-fit: cover;
+      @media (max-width: 401px) {
+         width: 100%;
+         height: 250px;
+         object-fit: cover;
+      }
+   }
+   @media (max-width: 768px) {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 12px;
+
+      img {
+         margin: 0 auto;
+      }
+   }
+   @media (max-width: 401px) {
+      padding: 0px;
+   }
+}
+
+.card-body-m0 {
+   margin-left: 0px;
+   padding: 15px 20px 15px 48px;
+   @media (max-width: 992px) {
+      padding: 15px 20px 15px 10px;
+   }
+   @media (max-width: 620px) {
+      padding: 0px 10px 15px 10px;
+   }
+}
+
+.items-help {
+   @include adaptiv-value("margin-bottom", 110, 30, 1);
+}
+.card {
+   // .card__body-up
+   &__body-up {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      @media (max-width: 401px) {
+         margin-top: 12px;
+      }
+   }
+   // .card__subtitle
+   &__subtitle {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 24px;
+      color: $primary70;
+   }
+   // .card__border
+   &__border {
+      border-top: 1px solid #d9ecfd;
+      margin-bottom: 12px;
+   }
+}
+.help-title {
+   margin-bottom: 5px;
+}
+.card-left {
+   @media (max-width: 401px) {
+      margin: 0 auto;
+   }
+}
+.card-left-vcs {
+   @media (max-width: 401px) {
+      margin: 0;
+   }
+}
+.help-card-left {
+   @media (max-width: 768px) {
+      display: none;
+   }
+   @media (max-width: 401px) {
+      display: flex;
+      text-align: center;
+   }
+}
+.title-768 {
+   display: none;
+   @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-left: 10px;
+   }
+   @media (max-width: 401px) {
+      display: none;
+   }
+}
+.card-vacanc {
+   border-right: 1px solid #d9ecfd;
+   padding: 0px 20px 0px 0px;
+}
+.happy-vacanc {
+   @media (max-width: 620px) {
+      border-right: none;
+      padding: 0px;
+   }
+}
+.blocks-help {
+   margin-bottom: 28px;
+   @media (max-width: 620px) {
+      display: flex;
+      flex: 0 1 50%;
+   }
+}
+.blocks-item {
+   display: flex;
+
+   @media (max-width: 620px) {
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      padding-top: 5px;
+   }
+}
+.card-m-0 {
+   margin-bottom: 5px;
+}
+.card {
+   border-radius: 8px;
+   border: 1px solid #d9ecfd;
+   // .card__button
+   &__button {
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 992px) {
+         display: flex;
+         flex-direction: column-reverse;
+      }
+   }
+   // .card__messages
+   &__messages {
+      align-self: center;
+      @media (max-width: 992px) {
+         margin-top: 20px;
+      }
+      span {
+         position: relative;
+         font-weight: 600;
+         font-size: 14px;
+         line-height: 28px;
+         color: $font1;
+
+         @media (max-width: 400px) {
+            font-size: 12px;
+         }
+
+         &::before {
+            content: "";
+            transition: all 0.3s ease 0s;
+            width: 24px;
+            height: 24px;
+            background: url("/images/chat.svg") center / 100% no-repeat;
+            padding: 6.4px 13px;
+            margin-right: 16px;
+            @media (max-width: 400px) {
+               margin-right: 6px;
+            }
+            @media (max-width: 430px) {
+               display: none;
+            }
+         }
+         &::after {
+            content: "";
+            position: absolute;
+            top: -9px;
+            right: -30px;
+            display: inline-block;
+            margin-top: 5px;
+            width: 24px;
+            height: 24px;
+            background: url("/images/icons/ar-up.svg") center / 55% no-repeat;
+            padding: 0.5px 6px;
+            transition: all 0.3s ease 0s;
+         }
+      }
+      &.collapsed {
+         span {
+            &::after {
+               transition: all 0.3s ease 0s;
+               transform: rotate(180deg);
+            }
+         }
+      }
+   }
+}
+.card__messages
+//===========================================================================================================================
+//Комментарии в карточках
+.card-comments {
+   margin-left: 34px;
+   @media (max-width: 992px) {
+      margin-left: 0px;
+   }
+}
+
+.happy-com {
+   @media (max-width: 451px) {
+      margin-left: 0px;
+   }
+}
+.card-cmt {
+   border: none;
+}
+
+.col-img {
+   position: relative;
+   width: 48.5px;
+   height: 48.5px;
+   border-radius: 50%;
+   object-fit: cover;
+   margin-right: 5px;
+   img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: 7px;
+   }
+}
+div.card-bd {
+   margin-left: 0;
+}
+.body-m-0 {
+   margin: 0px;
+   width: 100%;
+   span {
+      font-size: 14px;
+      line-height: 21px;
+      color: $font4;
+   }
+   h5 {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 24px;
+      letter-spacing: -0.02em;
+      color: $font1;
+   }
+}
+.card-txt {
+   font-family: "Roboto", sans-serif;
+   font-size: 15px;
+   line-height: 24px;
+   color: $font3;
+}
+.card-txt-w {
+   width: 140%;
+   @media (max-width: 768px) {
+      width: 100%;
+   }
+}
+.mb-3:last-child {
+   margin-bottom: 30px !important;
+}

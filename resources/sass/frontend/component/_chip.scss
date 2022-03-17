@@ -1,0 +1,29 @@
+.chip {
+    position: relative;
+    padding: 3px 25px 3px 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 24px;
+    border-radius: 50rem;
+    display: inline-block;
+
+    .close {
+        margin-left: 5px;
+        margin-right: -12px;
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background-image: $times-background;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        vertical-align: -2px;
+    }
+
+    &.bg-primary {
+        .close {
+            background-image: $times-background-white;
+        }
+    }
+}

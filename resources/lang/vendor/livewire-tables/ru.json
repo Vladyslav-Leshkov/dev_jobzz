@@ -1,0 +1,22 @@
+{
+    "All": "Все",
+    "Applied Filters": "Выбранные фильтры",
+    "Applied Sorting": "Выбранная сортировка",
+    "Bulk Actions": "Пакетные действия",
+    "Clear": "Очистить",
+    "Filters": "Фильтры",
+    "Remove filter option": "Удалить опцию фильтра",
+    "Remove sort option": "Удалить опцию сортировки",
+    "Search": "Поиск",
+    "Select All": "Выбрать все",
+    "Showing": "Показано",
+    "Unselect All": "Снять все",
+    "You are currently selecting all": "Вы сейчас выбираете все",
+    "You are not connected to the internet.": "You are not connected to the internet.",
+    "You have selected": "Вы выбрали",
+    "of": "с",
+    "results": "результаты",
+    "rows": "строк",
+    "rows, do you want to select all": "строки, вы хотите выделить все",
+    "to": "по"
+}

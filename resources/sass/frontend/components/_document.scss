@@ -1,0 +1,49 @@
+.main {
+   // .main__doc
+   &__doc {
+      @include adaptiv-value("margin-top", 55, 30, 1);
+      @include adaptiv-value("margin-bottom", 55, 30, 1);
+
+      a {
+         font-weight: 500;
+         font-size: 18px;
+         line-height: 35px;
+         color: $font1;
+         text-decoration: none;
+         &:hover {
+            text-decoration: underline;
+         }
+         &:visited {
+            color: rgba(51, 78, 104, 0.5);
+         }
+      }
+   }
+}
+
+.doc {
+   // .doc__list
+   &__list {
+      li {
+         list-style-type: none;
+         padding-bottom: 14px;
+         &::before {
+            content: "";
+            background-image: url("data:image/svg+xml,%3Csvg width='8' height='6' viewBox='0 0 8 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.80309 0.201745C8.06564 0.470872 8.06564 0.907129 7.80309 1.17612L3.29399 5.79825C3.03144 6.06725 2.60597 6.06725 2.34342 5.79825L0.196915 3.59787C-0.0656383 3.32887 -0.0656383 2.89262 0.196915 2.62363C0.459337 2.3545 0.884936 2.3545 1.14736 2.62363L2.81864 4.33676L6.85251 0.201745C7.11506 -0.0672483 7.54066 -0.0672483 7.80309 0.201745Z' fill='%23439FF4'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            border: 1px solid $primary70;
+            background-position: center;
+            border-radius: 50%;
+            padding: 2px 9px;
+            margin-right: 7px;
+         }
+      }
+   }
+}
+
+li:hover::before {
+   background: $primary70;
+   background-image: url("data:image/svg+xml,%3Csvg width='8' height='6' viewBox='0 0 8 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.80309 0.201745C8.06564 0.470872 8.06564 0.907129 7.80309 1.17612L3.29399 5.79825C3.03144 6.06725 2.60597 6.06725 2.34342 5.79825L0.196915 3.59787C-0.0656383 3.32887 -0.0656383 2.89262 0.196915 2.62363C0.459337 2.3545 0.884936 2.3545 1.14736 2.62363L2.81864 4.33676L6.85251 0.201745C7.11506 -0.0672483 7.54066 -0.0672483 7.80309 0.201745Z' fill='white'/%3E%3C/svg%3E");
+   background-repeat: no-repeat;
+   border: 1px solid $primary70;
+   background-position: center;
+}

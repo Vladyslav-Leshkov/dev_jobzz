@@ -1,0 +1,88 @@
+// Страница Регистрации
+.option-registration {
+   margin-top: -18px;
+   margin-bottom: 15px;
+   label {
+      font-size: 14px;
+      margin-left: -70px;
+      @media (max-width: 600px) {
+         margin-left: 30px;
+      }
+   }
+   span {
+      color: $primary70;
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+}
+
+//================================================================================================================
+//Страница Создание профиля шаг 1
+.options-profile {
+   // .options-profile__checkbox
+   &__checkbox {
+      position: relative;
+   }
+}
+
+.option {
+   position: relative;
+   // .option__item
+   &__item {
+      display: none;
+   }
+   // .option__label
+   &__label {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      cursor: pointer;
+      color: #2a4b5d;
+      margin: 2px 0 14px 30px;
+      //letter-spacing: -0.5px;
+      &::before {
+         content: "";
+         width: 20px;
+         height: 20px;
+         border: 1px solid $primary50;
+         display: inline-block;
+         position: absolute;
+         top: 0;
+         left: 0;
+         margin-right: 7px;
+         @media (max-width: 407px) {
+            top: 5px;
+         }
+      }
+   }
+   // .option__small
+   &__option__small{
+      
+   }
+}
+.option__item:checked + .option__label::before {
+   background-image: url("data:image/svg+xml,%0A%3Csvg width='14' height='11' viewBox='0 0 14 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.1486 0L14 1.85148L5.33932 10.5122L0 5.17296L1.85142 3.32149L5.33932 6.80927L12.1486 0Z' fill='%233D90DC'/%3E%3C/svg%3E%0A");
+   background-repeat: no-repeat;
+   background-position: 50%;
+}
+
+//================================================================================================================
+//Страница Создание профиля шаг 1 (По бустрапу)
+
+.custom-checkbox {
+   input {
+      border: 1px solid #b9d4ea !important;
+      width: 20px;
+      height: 20px;
+      background: none;
+      border-radius: 0;
+   }
+   > .custom-control-input {
+      border-radius: 0;
+   }
+}
+.custom-control-input {
+   border-radius: 0;
+}
+

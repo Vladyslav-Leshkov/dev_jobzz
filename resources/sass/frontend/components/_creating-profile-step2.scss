@@ -1,0 +1,309 @@
+.skills-profile {
+   // .skills-profile__subtitle
+   &__subtitle {
+      margin-top: -20px;
+      text-transform: lowercase;
+      margin-bottom: 32px;
+      font-size: 15px;
+      color: #2a4b5d;
+   }
+}
+.my-about .item-info__text {
+   width: 853px;
+   @media (max-width: 1200px) {
+      width: 100%;
+   }
+}
+.sub-fz {
+   margin-top: -25px;
+   font-weight: normal;
+   font-size: 15px;
+   line-height: 24px;
+}
+
+
+.buttons-profile {
+   // .buttons-profile__item
+   &__item {
+      span {
+         &:hover {
+            color: $primary20;
+         }
+      }
+   }
+}
+.field {
+   textarea {
+      width: 853px;
+      height: 150px;
+      border: 1px solid #b1cfe8;
+      border-radius: 8px;
+      font-size: 15px;
+      line-height: 21px;
+      @media (max-width: 1200px) {
+         width: 100%;
+      }
+      @media (max-width: 992px) {
+         width: 100%;
+         padding-left: 38px;
+      }
+      &::placeholder {
+         font-weight: 500;
+         font-size: 16px;
+         line-height: 28px;
+         color: #b1cfe8;
+      }
+   }
+   &.form-field {
+      border: none;
+   }
+}
+.my-profile-field {
+   textarea {
+      font-family: "Roboto", sans-serif;
+      font-size: 15px;
+      line-height: 21px;
+      color: $font3;
+   }
+}
+.field-vacancies {
+   textarea {
+      color: $font3;
+   }
+}
+.p-field {
+   textarea {
+      font-family: "Roboto", sans-serif;
+      padding-top: 15px;
+   }
+}
+.info-profile {
+   @include adaptiv-value("margin-top", 60, 30, 1);
+
+   // .info-profile__text
+   &__text {
+      font-size: 15px;
+      line-height: 24px;
+      color: #2a4b5d;
+      margin-top: 15px;
+   }
+   @include adaptiv-value("margin-bottom", 53, 25, 1);
+}
+.forms-info {
+   display: flex;
+   max-width: 848px;
+   @media (max-width: 1200px) {
+      max-width: 100%;
+   }
+   @media (max-width: 992px) {
+      flex-direction: column;
+   }
+
+   // .forms-info__item
+   &__item {
+      width: 100%;
+      flex: 0 0 50%;
+      padding-right: 5px;
+      margin-right: 10px;
+      @media (max-width: 992px) {
+         margin-right: 0px;
+      }
+      &:last-child {
+         margin-right: 0px;
+      }
+      input {
+         border: 1px solid #b1cfe8;
+         border-radius: 8px;
+         height: 48px;
+         margin-bottom: 24px;
+         &::placeholder {
+            padding: 0px 26px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 28px;
+            color: #b1cfe8;
+            @media (max-width: 992px) {
+               padding: 0px;
+            }
+         }
+      }
+   }
+}
+input.form-info {
+   padding: 14px 0px 14px 25px;
+   &::placeholder {
+      padding: 14px 0px 14px 0px;
+   }
+}
+
+.my-file {
+   justify-content: flex-start;
+   padding-left: 30%;
+}
+.item-info {
+   // .item-info__text
+   &__text {
+      margin-top: -20px;
+      display: flex;
+      justify-content: flex-end;
+      @media (max-width: 1200px) {
+         width: 100%;
+      }
+      @media (max-width: 992px) {
+         margin-top: -20px;
+      }
+   }
+}
+.field-info {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   border: 1px dashed #b1cfe8;
+   border-radius: 8px;
+   width: 420px;
+   height: 200px;
+   @media (max-width: 1200px) {
+      width: 100%;
+   }
+   @media (max-width: 992px) {
+      margin-top: 24px;
+   }
+
+   // .field-info__icon
+   &__icon {
+      position: relative;
+      align-self: center;
+      margin-top: 35px;
+      margin-left: -15%;
+      @media (max-width: 992px) {
+         margin-left: -6.5%;
+      }
+      @media (max-width: 750px) {
+         margin-left: -8.5%;
+      }
+      @media (max-width: 620px) {
+         margin-left: -10.5%;
+      }
+      @media (max-width: 500px) {
+         margin-left: -12.5%;
+      }
+      @media (max-width: 425px) {
+         margin-left: -14.5%;
+      }
+      @media (max-width: 330px) {
+         margin-left: -20.5%;
+      }
+      &::before {
+         position: absolute;
+         z-index: 2;
+         content: "";
+         width: 64px;
+         height: 64px;
+         border: 1px solid #d9ecfd;
+         border-radius: 50%;
+         background-image: url("data:image/svg+xml,%0A%3Csvg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.8768 18.3202C16.912 18.3202 16.9472 18.3202 16.9895 18.3202C17.0036 18.3202 17.0176 18.3202 17.0317 18.3202C17.0529 18.3202 17.081 18.3202 17.1021 18.3202C19.1651 18.2849 20.8338 17.5597 22.0659 16.1727C24.7766 13.117 24.326 7.87865 24.2767 7.37875C24.1007 3.62601 22.3264 1.83061 20.8619 0.992752C19.7706 0.366121 18.4962 0.0281632 17.074 0H17.0247C17.0176 0 17.0036 0 16.9965 0H16.9543C16.1728 0 14.6379 0.126734 13.1663 0.964589C11.6878 1.80244 9.88532 3.59785 9.7093 7.37875C9.66002 7.87865 9.20941 13.117 11.9201 16.1727C13.1452 17.5597 14.8139 18.2849 16.8768 18.3202ZM11.5892 7.55477C11.5892 7.53365 11.5962 7.51253 11.5962 7.49845C11.8286 2.4502 15.4123 1.90806 16.9472 1.90806H16.9754C16.9895 1.90806 17.0106 1.90806 17.0317 1.90806C18.9327 1.9503 22.1645 2.72479 22.3827 7.49845C22.3827 7.51957 22.3827 7.54069 22.3898 7.55477C22.3968 7.60406 22.8897 12.3918 20.6507 14.9124C19.7636 15.9122 18.5807 16.4051 17.0247 16.4191C17.0106 16.4191 17.0036 16.4191 16.9895 16.4191C16.9754 16.4191 16.9684 16.4191 16.9543 16.4191C15.4053 16.4051 14.2154 15.9122 13.3353 14.9124C11.1034 12.4059 11.5822 7.59702 11.5892 7.55477Z' fill='%23439FF4'/%3E%3Cpath d='M31.4583 27.0086C31.4583 27.0015 31.4583 26.9945 31.4583 26.9875C31.4583 26.9311 31.4513 26.8748 31.4513 26.8114C31.4091 25.4174 31.3175 22.1575 28.2618 21.1154C28.2407 21.1084 28.2125 21.1013 28.1914 21.0943C25.016 20.2846 22.3757 18.454 22.3476 18.4329C21.9181 18.1301 21.3266 18.2357 21.0239 18.6652C20.7211 19.0947 20.8267 19.6861 21.2562 19.9889C21.3759 20.0734 24.1782 22.0237 27.6845 22.9249C29.325 23.5093 29.508 25.2625 29.5573 26.8678C29.5573 26.9311 29.5573 26.9875 29.5644 27.0438C29.5714 27.6775 29.5292 28.6561 29.4165 29.2194C28.2759 29.8671 23.805 32.1061 17.0036 32.1061C10.2303 32.1061 5.73127 29.8601 4.58362 29.2123C4.47097 28.6491 4.42169 27.6704 4.43577 27.0367C4.43577 26.9804 4.44281 26.9241 4.44281 26.8607C4.49209 25.2554 4.67515 23.5023 6.31566 22.9179C9.82198 22.0167 12.6242 20.0593 12.7439 19.9819C13.1734 19.6791 13.279 19.0877 12.9763 18.6582C12.6735 18.2287 12.0821 18.1231 11.6526 18.4258C11.6244 18.447 8.9982 20.2776 5.80872 21.0873C5.78056 21.0943 5.75944 21.1013 5.73831 21.1084C2.68261 22.1575 2.59108 25.4174 2.54883 26.8044C2.54883 26.8678 2.54883 26.9241 2.54179 26.9804C2.54179 26.9875 2.54179 26.9945 2.54179 27.0015C2.53475 27.3677 2.52771 29.2476 2.90087 30.191C2.97128 30.3741 3.09802 30.529 3.267 30.6346C3.47822 30.7754 8.54055 34.0001 17.0106 34.0001C25.4807 34.0001 30.543 30.7684 30.7543 30.6346C30.9162 30.529 31.05 30.3741 31.1204 30.191C31.4724 29.2546 31.4654 27.3747 31.4583 27.0086Z' fill='%23439FF4'/%3E%3C/svg%3E%0A");
+         background-repeat: no-repeat;
+         background-position: 50%;
+         padding: 23.9px 31px;
+      }
+
+      img {
+         position: absolute;
+         top: 0px;
+         left: 0px;
+         z-index: 5;
+      }
+   }
+   // .field-info__icon-logo
+   &__icon-logo {
+      &::before {
+         background-image: url("data:image/svg+xml,%0A%3Csvg width='47' height='13' viewBox='0 0 47 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.504 0.799999H2.584V10.24H8.44V12H0.504V0.799999ZM15.111 12.16C13.9697 12.16 12.9403 11.9147 12.023 11.424C11.1057 10.9227 10.3857 10.2347 9.863 9.36C9.34033 8.47467 9.079 7.488 9.079 6.4C9.079 5.312 9.34033 4.33067 9.863 3.456C10.3857 2.57067 11.1057 1.88267 12.023 1.392C12.9403 0.890666 13.9697 0.639999 15.111 0.639999C16.2523 0.639999 17.2817 0.890666 18.199 1.392C19.1163 1.88267 19.8363 2.56533 20.359 3.44C20.8817 4.31467 21.143 5.30133 21.143 6.4C21.143 7.49867 20.8817 8.48533 20.359 9.36C19.8363 10.2347 19.1163 10.9227 18.199 11.424C17.2817 11.9147 16.2523 12.16 15.111 12.16ZM15.111 10.336C15.8577 10.336 16.5297 10.1707 17.127 9.84C17.7243 9.49867 18.1937 9.02933 18.535 8.432C18.8763 7.824 19.047 7.14667 19.047 6.4C19.047 5.65333 18.8763 4.98133 18.535 4.384C18.1937 3.776 17.7243 3.30667 17.127 2.976C16.5297 2.63467 15.8577 2.464 15.111 2.464C14.3643 2.464 13.6923 2.63467 13.095 2.976C12.4977 3.30667 12.0283 3.776 11.687 4.384C11.3457 4.98133 11.175 5.65333 11.175 6.4C11.175 7.14667 11.3457 7.824 11.687 8.432C12.0283 9.02933 12.4977 9.49867 13.095 9.84C13.6923 10.1707 14.3643 10.336 15.111 10.336ZM30.9958 6.272H32.9638V10.736C32.3878 11.1947 31.7158 11.5467 30.9478 11.792C30.1798 12.0373 29.3904 12.16 28.5798 12.16C27.4384 12.16 26.4091 11.9147 25.4918 11.424C24.5744 10.9227 23.8544 10.2347 23.3318 9.36C22.8091 8.48533 22.5478 7.49867 22.5478 6.4C22.5478 5.30133 22.8091 4.31467 23.3318 3.44C23.8544 2.56533 24.5744 1.88267 25.4918 1.392C26.4198 0.890666 27.4598 0.639999 28.6118 0.639999C29.5504 0.639999 30.4038 0.794666 31.1718 1.104C31.9398 1.41333 32.5851 1.86667 33.1078 2.464L31.7958 3.744C30.9424 2.89067 29.9131 2.464 28.7078 2.464C27.9184 2.464 27.2144 2.62933 26.5958 2.96C25.9878 3.29067 25.5078 3.75467 25.1558 4.352C24.8144 4.94933 24.6438 5.632 24.6438 6.4C24.6438 7.14667 24.8144 7.81867 25.1558 8.416C25.5078 9.01333 25.9878 9.48267 26.5958 9.824C27.2144 10.1653 27.9131 10.336 28.6918 10.336C29.5664 10.336 30.3344 10.144 30.9958 9.76V6.272ZM40.9391 12.16C39.7978 12.16 38.7685 11.9147 37.8511 11.424C36.9338 10.9227 36.2138 10.2347 35.6911 9.36C35.1685 8.47467 34.9071 7.488 34.9071 6.4C34.9071 5.312 35.1685 4.33067 35.6911 3.456C36.2138 2.57067 36.9338 1.88267 37.8511 1.392C38.7685 0.890666 39.7978 0.639999 40.9391 0.639999C42.0805 0.639999 43.1098 0.890666 44.0271 1.392C44.9445 1.88267 45.6645 2.56533 46.1871 3.44C46.7098 4.31467 46.9711 5.30133 46.9711 6.4C46.9711 7.49867 46.7098 8.48533 46.1871 9.36C45.6645 10.2347 44.9445 10.9227 44.0271 11.424C43.1098 11.9147 42.0805 12.16 40.9391 12.16ZM40.9391 10.336C41.6858 10.336 42.3578 10.1707 42.9551 9.84C43.5525 9.49867 44.0218 9.02933 44.3631 8.432C44.7045 7.824 44.8751 7.14667 44.8751 6.4C44.8751 5.65333 44.7045 4.98133 44.3631 4.384C44.0218 3.776 43.5525 3.30667 42.9551 2.976C42.3578 2.63467 41.6858 2.464 40.9391 2.464C40.1925 2.464 39.5205 2.63467 38.9231 2.976C38.3258 3.30667 37.8565 3.776 37.5151 4.384C37.1738 4.98133 37.0031 5.65333 37.0031 6.4C37.0031 7.14667 37.1738 7.824 37.5151 8.432C37.8565 9.02933 38.3258 9.49867 38.9231 9.84C39.5205 10.1707 40.1925 10.336 40.9391 10.336Z' fill='%23439FF4'/%3E%3C/svg%3E%0A");
+         background-repeat: no-repeat;
+         background-position: 50%;
+         padding: 23.9px 31px;
+      }
+   }
+   // .field-info__company
+   &__company {
+      position: absolute;
+      top: 0;
+      left: 42.5%;
+      @media (max-width: 768px) {
+         left: 46.5%;
+      }
+      @media (max-width: 620px) {
+         left: 44.5%;
+      }
+      @media (max-width: 500px) {
+         left: 44%;
+      }
+      @media (max-width: 330px) {
+         left: 39.5%;
+      }
+      img {
+         width: 64px;
+         height: 64px;
+         object-fit: contain;
+         border: 1px solid #d9ecfd;
+         box-sizing: border-box;
+         border-radius: 4px;
+      }
+   }
+   // .field-info__text
+   &__text {
+      margin-top: 70px;
+      text-align: center;
+      span {
+         font-weight: 600;
+         font-size: 14px;
+         color: $primary70;
+      }
+      p {
+         font-size: 12px;
+         line-height: 15px;
+         color: #95c2ed;
+         margin-bottom: 0px;
+      }
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 32px;
+      color: $font4;
+   }
+}
+.m-t-75 {
+   margin-top: 75px;
+}
+.field-w {
+   @media (max-width: 992px) {
+      margin: 24px auto 0px auto;
+      width: 65%;
+   }
+   @media (max-width: 550px) {
+      width: 100%;
+   }
+}
+.field-w-70 {
+   @media (max-width: 992px) {
+      margin: 24px auto 0px auto;
+      width: 70%;
+   }
+   @media (max-width: 768px) {
+      width: 100%;
+   }
+}
+.p-icon {
+   margin-top: 28px;
+}
+
+.buttons-profile2__item {
+   flex-wrap: wrap;
+   width: 65%;
+   @media (max-width: 1201px) {
+      width: 100%;
+   }
+}
+span.badge-p {
+   padding-left: 40px;
+   padding-right: 20px;
+   margin-right: 5px;
+}

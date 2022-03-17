@@ -1,0 +1,16 @@
+@each $color, $value in $theme-colors {
+  .bg-#{$color}-light {
+    background: lighten($value, 35%);
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .bg-#{$color}-dark {
+    background: darken($value, 35%);
+  }
+}
+
+
+[v-cloak]{
+    display: none !important;
+}

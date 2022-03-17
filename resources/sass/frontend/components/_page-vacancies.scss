@@ -1,0 +1,444 @@
+.page-vacancies {
+    // .page-vacancies__body
+    &__body {
+        max-width: 840px;
+        @media (max-width: 992px) {
+            max-width: 100%;
+        }
+    }
+
+    // .page-vacancies__data
+    &__data {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 24px;
+        color: $font4;
+        padding-bottom: 10px;
+    }
+
+    // .page-vacancies__border
+    &__border {
+        margin: 25px 0px 25px 0px;
+        border-bottom: 1px solid $primary30;
+    }
+}
+
+.header-vacancies {
+    @include adaptiv-value("margin-bottom", 35, 20, 1);
+    // .header-vacancies__up
+    &__up {
+        margin-bottom: 32px;
+    }
+
+    // .header-vacancies__title
+    &__title {
+        @include adaptiv-font(32, 28, 1);
+        line-height: 28 / 32 * 100%;
+        font-weight: 600;
+        color: $font1;
+        padding-bottom: 20px;
+    }
+
+    // .header-vacancies__main
+    &__main {
+        display: flex;
+    }
+
+    // .header-vacancies__img
+    &__img {
+        position: relative;
+        padding-right: 16px;
+
+        img {
+            width: 48px;
+            height: 48px;
+            object-fit: cover;
+        }
+
+        .card-star {
+            &::before {
+                content: "";
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background: #ffffff url("../../../images/icons/star.svg") center no-repeat;
+                border: 1px solid #d9ecfd;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    // .header-vacancies__name
+    &__name {
+        font-size: 18px;
+        font-weight: 600;
+        color: $primary70;
+        line-height: 19px;
+        border-bottom: 1px solid $primary70;
+    }
+
+    // .header-vacancies__position
+    &__position {
+        padding-top: 8px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        color: $font4;
+    }
+}
+
+.up {
+    display: flex;
+    justify-content: space-between;
+
+    // .up__right
+    &__right {
+        @media (max-width: 500px) {
+            display: none;
+        }
+    }
+}
+
+.footer-vacancies {
+    // .footer-vacancies__about
+    &__about {
+        max-width: 630px;
+        @media (max-width: 992px) {
+            max-width: 730px;
+        }
+    }
+
+    // .footer-vacancies__location
+    &__location {
+        margin-top: 45px;
+    }
+}
+
+.location-vcs {
+    display: flex;
+    // .location-vcs__items
+    &__items {
+        display: flex;
+        align-items: center;
+
+        &:first-child {
+            border-right: 1px solid #d9ecfd;
+        }
+    }
+
+    // .location-vcs__img
+    &__img {
+        padding-right: 10px;
+    }
+
+    // .location-vcs__item
+    &__item {
+        padding-right: 18px;
+    }
+}
+
+.web {
+    padding-left: 16px;
+}
+
+.item-vcs {
+    &__header {
+        font-size: 12px;
+        line-height: 22px;
+        color: $font4;
+    }
+
+    // .item-vcs__footer
+    &__footer {
+        font-size: 12px;
+    }
+}
+
+.page-vacancies {
+    // .page-vacancies__publish
+    &__publish {
+        padding-top: 8px;
+        display: flex;
+        justify-content: flex-end;
+        @include adaptiv-value("margin-bottom", 140, 30, 1);
+    }
+}
+
+button.btn-vacancies {
+    padding: 16px 110px 16px 32px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+//======================================================================================================
+//Страница вакансии (Вход не выполнен)
+
+.page-vacancies {
+    // .page-vacancies__authorization
+    &__authorization {
+        display: inline-block;
+        background: #f2f7fb;
+        border: 1px solid #d9ecfd;
+        border-radius: 8px;
+        padding: 28px 46px;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+
+        a {
+            color: $primary70;
+            text-decoration: underline;
+
+            &:hover {
+                color: #358fe1;
+                text-decoration: underline;
+            }
+        }
+
+        @include adaptiv-value("margin-bottom", 130, 30, 1);
+    }
+}
+
+//======================================================================================================
+//Страница мои вакансии (Активные)
+
+.page-my-vacancies {
+    margin-bottom: 0;
+}
+
+.page-my-vacancies {
+    // .page-my-vacancies__block
+    &__block {
+        position: relative;
+        border: 1px solid #d9ecfd;
+        box-sizing: border-box;
+        border-radius: 8px;
+        padding: 50px 40px 30px 50px;
+        @media (max-width: 1100px) {
+            max-width: 100%;
+        }
+        @media (max-width: 992px) {
+            padding: 20px 20px 30px 20px;
+        }
+        @media (max-width: 370px) {
+            padding: 20px 12px 20px 12px;
+        }
+    }
+
+    &__title {
+        padding-bottom: 22px;
+    }
+
+    // .page-my-vacancies__circle
+
+    &__circle {
+        position: absolute;
+        top: 0px;
+        right: -25px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        cursor: pointer;
+        border: 1px solid transparent;
+        @media (max-width: 992px) {
+            right: -8px;
+        }
+    }
+
+    // .page-my-vacancies__tooltip
+    &__tooltip {
+        padding: 18px 16px 10px 16px;
+        width: 225px;
+        border-radius: 8px;
+        color: #5d76a3;
+        box-shadow: 0px 4px 15px rgba(50, 69, 84, 0.15);
+        background: $primary20;
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-left: 0;
+            padding-left: 0;
+            padding-bottom: 10px;
+
+            &:last-child {
+                padding-bottom: 0px;
+            }
+        }
+
+        a {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: $font1;
+
+            &:hover {
+                color: $font1;
+            }
+        }
+    }
+
+    // .page-my-vacancies__delta
+    &__delta {
+        position: absolute;
+        top: 10px;
+        left: -19px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px;
+        border-color: transparent #ffffff transparent transparent;
+    }
+
+    //page-my-vacancies__triangle-r
+    &__triangle-r {
+        position: absolute;
+        top: 10px;
+        right: -19px;
+        border-style: solid;
+        border-width: 10px;
+        border-color: transparent transparent transparent $primary20;
+    }
+
+    // .page-my-vacancies__link
+    &__link {
+        padding-left: 0;
+
+        &:hover {
+            background: none;
+        }
+    }
+
+    //page-my-vacancies__subtitle
+    &__subtitle {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        color: $primary70;
+    }
+
+    //page-my-vacancies__border
+    &__border {
+        border-top: 1px solid #d9ecfd;
+    }
+}
+
+.dropstart .dropdown-toggle::before {
+    display: none;
+}
+
+.page-my-vacancies__dropdown .page-my-vacancies__tooltip {
+    position: absolute;
+    top: -21px;
+    right: -280px;
+    transform: translate(1000px, -16px);
+
+    &::after {
+        display: none;
+    }
+}
+
+.dropend .dropdown-toggle::after {
+    display: none;
+}
+
+.delete-small,
+.copy-small,
+.active-small,
+.redact-small,
+.goout-small,
+.no-active-small {
+    position: relative;
+    padding-left: 22px;
+    display: flex;
+
+    &::before {
+        content: "";
+        padding: 7.5px 8px;
+        margin-right: 6px;
+        margin-top: 10px;
+        position: absolute;
+        top: -8px;
+        left: 0px;
+    }
+}
+
+.redact-small {
+    &::before {
+        background: url("../../../images/icons/redact-small.svg") no-repeat;
+    }
+}
+
+.goout-small {
+    &::before {
+        background: url("../../../images/icons/gout.svg") no-repeat;
+    }
+}
+
+.no-active-small {
+    &::before {
+        background: url("../../../images/icons/no-active-small.svg") no-repeat;
+    }
+}
+
+.active-small {
+    &::before {
+        background: url("../../../images/icons/ar-small.svg") no-repeat;
+    }
+}
+
+.copy-small {
+    &::before {
+        background: url("../../../images/icons/copy-small.svg") no-repeat;
+    }
+}
+
+.delete-small {
+    &::before {
+        background: url("../../../images/icons/close-red.svg") no-repeat;
+    }
+}
+
+.team-one__tooltip {
+    width: 275px;
+}
+
+button.page-my-vacancies__close {
+    position: absolute;
+    top: 25px;
+    right: 16px;
+    width: 25px;
+    height: 25px;
+    border-radius: 2px;
+    background: rgba(235, 93, 110, 0.1) url("../../../images/icons/close-red.svg") 50% no-repeat;
+
+    @media (max-width: 400px) {
+        top: 4px;
+        right: 4px;
+        width: 15px;
+        height: 15px;
+    }
+}
+
+//==========================================================================================================================
+//Страница специалистов (Мы рады, что помогли найти вам специалиста)
+
+.card-avatar {
+    img {
+        width: 95px;
+        height: 95px;
+        border-radius: 8px;
+        object-fit: cover;
+        @media (max-width: 576px) {
+            width: 100%;
+            height: 250px;
+        }
+    }
+}
+
+.specialists__block {
+    padding: 32px 32px 25px 32px;
+}

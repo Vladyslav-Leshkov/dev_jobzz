@@ -1,0 +1,297 @@
+.payment {
+   // .payment__header
+   &__header {
+      background: #eff4f9;
+      border-radius: 8px;
+      vertical-align: middle;
+      padding: 18px 20px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      color: $font1;
+   }
+   // .payment__row
+   &__row {
+      background: $primary20;
+      border: 1px solid #d9ecfd;
+      box-sizing: border-box;
+      border-radius: 8px;
+      vertical-align: middle;
+      padding: 14px 20px 16px 20px;
+      span {
+         margin-left: 38px;
+      }
+   }
+   // .payment__form
+   &__form {
+      border: 1px solid #d9ecfd;
+      box-sizing: border-box;
+      border-radius: 8px;
+      padding: 30px;
+      height: 375px;
+      @media (max-width: 1200px) {
+         width: 100%;
+         height: 300px;
+         margin-bottom: 80px;
+      }
+      @media (max-width: 500px) {
+         width: 100%;
+         padding: 30px 15px;
+      }
+      @media (max-width: 710px) {
+         height: 100%;
+      }
+   }
+   // .payment__btn
+   &__btn {
+      width: 100%;
+
+      button {
+         width: 100%;
+      }
+   }
+}
+button.payment-btn {
+   padding: 14px 130px 14px 0px;
+   background: #56f0f0 url("/images/icons/ar-r-bl.svg") 90% 51%/4% no-repeat;
+   &:hover {
+      background: #4ae6e6 url("/images/icons/ar-r-bl.svg") 90% 51%/4% no-repeat;
+   }
+   @media (max-width: 1200px) {
+      width: 280px;
+      padding: 14px 60px 14px 30px;
+   }
+   @media (max-width: 400px) {
+      padding: 14px 60px 14px 30px;
+   }
+   @media (max-width: 465px) {
+      width: 100%;
+   }
+}
+button.invoice__btn {
+   max-width: 265px;
+   padding: 14px 75px 14px 25px;
+}
+.td-dark {
+   label {
+      font-weight: 600;
+      @include adaptiv-font(18, 15, 1);
+      line-height: 26 / 18 * 100%;
+      color: $font1;
+      padding-bottom: 10px;
+      margin-left: 38px;
+   }
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 15px;
+   color: $font4;
+
+   .option__label {
+      margin-bottom: 0;
+      &::before {
+         top: 3px;
+      }
+   }
+}
+.dark {
+   font-weight: 600;
+   @include adaptiv-font(24, 15, 1);
+   line-height: 29 / 24 * 100%;
+   color: $font1;
+}
+.td-grey,
+.td-green {
+   font-weight: 600;
+   line-height: 24px;
+   letter-spacing: -0.02em;
+}
+.td-grey {
+   @include adaptiv-font(16, 14, 1);
+   color: $font4;
+}
+.td-green {
+   @include adaptiv-font(24, 18, 1);
+   color: $secondary70;
+}
+.d-md-none {
+   font-size: 12px;
+   line-height: 25px;
+   color: $font1;
+   @media (max-width: 768px) {
+      margin-top: 20px;
+   }
+}
+
+.check__title {
+   label {
+      color: $primary70;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 24px;
+   }
+   .option__label {
+      margin-bottom: 0;
+   }
+}
+//============================================================================================================================
+//archive
+
+.archive {
+   // .archive__row
+   &__row {
+      border-bottom: 1px solid $primary30;
+   }
+   // .archive__name
+   &__name {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: -0.02em;
+      span {
+         font-weight: 500;
+         font-size: 12px;
+         line-height: 15px;
+         color: $font4;
+      }
+   }
+   // .archive__status
+   &__status {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      color: $font4;
+      span {
+         color: $secondary70;
+         padding-right: 5px;
+      }
+   }
+   // .archive__account
+   &__account {
+      background: #daf8f0;
+      color: $secondary70;
+      margin-right: 12px;
+      span {
+         &::after {
+            background: url("/images/icons/account.svg") no-repeat;
+            background-position: 50%;
+         }
+      }
+   }
+   &__account,
+   &__act {
+      padding: 6px 12px 9px 18px;
+      height: 32px;
+      border-radius: 4px;
+      span {
+         &::after {
+            content: "";
+            background: url("/images/icons/account.svg") 50% no-repeat;
+            padding: 5px 10px;
+         }
+      }
+   }
+   // .archive__act
+   &__act {
+      background: #e1f0fd;
+      color: $primary70;
+      span {
+         &::after {
+            background: url("/images/icons/act.svg") 50% no-repeat;
+         }
+      }
+   }
+   //archive__price
+   &__price {
+      font-weight: 600;
+      @include adaptiv-font(24, 18, 1);
+      line-height: 24px;
+      letter-spacing: -0.02em;
+      color: $font4;
+   }
+   //archive__avatar
+   &__avatar {
+      display: flex;
+      align-items: center;
+      .archive__info {
+         font-weight: 600;
+         font-size: 16px;
+         line-height: 26px;
+      }
+      .archive__info span {
+         padding-top: 5px;
+      }
+   }
+   //archive__info
+   &__info {
+      display: flex;
+      flex-direction: column;
+   }
+}
+
+a.archive__act {
+   color: $primary70;
+}
+a.archive__account {
+   color: $secondary70;
+}
+
+//============================================================================================================================
+//Форма
+
+.payment {
+   // .payment__subtitle
+   &__subtitle {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 24px;
+      color: $font4;
+   }
+}
+.popup-form .calendar {
+   background: #f1f8ff;
+   &::placeholder {
+      color: $font2;
+   }
+}
+.popup-form {
+   position: relative;
+   img {
+      position: absolute;
+      top: 19px;
+      right: 19px;
+      @media (max-width: 710px) {
+         left: 340px;
+      }
+      @media (max-width: 465px) {
+         left: 91%;
+      }
+   }
+}
+
+input.calendar {
+   @media (max-width: 710px) {
+      width: 377px;
+   }
+   @media (max-width: 465px) {
+      width: 100%;
+   }
+}
+input.payment__input {
+   @media (max-width: 1200px) {
+      width: 427px;
+      margin-right: 15px;
+   }
+   @media (max-width: 750px) {
+      width: 377px;
+      margin-right: 15px;
+   }
+   @media (max-width: 465px) {
+      width: 100%;
+   }
+}
+div.payment__block-input {
+   @media (max-width: 710px) {
+      display: flex;
+      flex-direction: column;
+   }
+}

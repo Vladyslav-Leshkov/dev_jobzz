@@ -1,0 +1,195 @@
+$margins-from: 4;
+$margins-to: 21;
+
+
+.ps-150 {
+    padding-left: 150px !important;
+}
+
+.ps-200 {
+    padding-left: 200px !important;
+}
+
+.py-150 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.py-200 {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+
+@mixin make-margins-val( $val, $breakpoint : '') {
+    $suffix: $val;
+
+    @if ($breakpoint != '') {
+        $suffix: $breakpoint + '-' + $val;
+    }
+
+
+    .m-#{$suffix} {
+        margin: #{$val}px !important;
+    }
+
+    .mx-#{$suffix} {
+        margin-left: #{$val}px !important;
+        margin-right: #{$val}px !important;
+    }
+
+    .my-#{$suffix} {
+        margin-top: #{$val}px !important;
+        margin-bottom: #{$val}px !important;
+    }
+
+    .mb-#{$suffix} {
+        margin-bottom: #{$val}px !important;
+    }
+
+    .mt-#{$suffix} {
+        margin-top: #{$val}px !important;
+    }
+
+    .ms-#{$suffix} {
+        margin-left: #{$val}px !important;
+    }
+
+    .me-#{$suffix} {
+        margin-right: #{$val}px !important;
+    }
+
+
+    .p-#{$suffix} {
+        padding: #{$val}px !important;
+    }
+
+    .px-#{$suffix} {
+        padding-left: #{$val}px !important;
+        padding-right: #{$val}px !important;
+    }
+
+    .py-#{$suffix} {
+        padding-top: #{$val}px !important;
+        padding-bottom: #{$val}px !important;
+    }
+
+    .pb-#{$suffix} {
+        padding-bottom: #{$val}px !important;
+    }
+
+    .pt-#{$suffix} {
+        padding-top: #{$val}px !important;
+    }
+
+    .ps-#{$suffix} {
+        padding-left: #{$val}px !important;
+    }
+
+    .pe-#{$suffix} {
+        padding-right: #{$val}px !important;
+    }
+}
+
+@mixin make-margins-zero($breakpoint: '') {
+    $suffix: '';
+    @if ($breakpoint != '') {
+        $suffix: $breakpoint + '-';
+    }
+
+    .m-#{$suffix}0 {
+        margin: 0 !important;
+    }
+
+    .mx-#{$suffix}0 {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .my-#{$suffix}0 {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .mt-#{$suffix}0 {
+        margin-top: 0 !important;
+    }
+
+    .mb-#{$suffix}0 {
+        margin-bottom: 0 !important;
+    }
+
+    .ms-#{$suffix}0 {
+        margin-left: 0 !important;
+    }
+
+    .me-#{$suffix}0 {
+        margin-right: 0 !important;
+    }
+
+    .p-#{$suffix}0 {
+        padding: 0 !important;
+    }
+
+    .px-#{$suffix}0 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .py-#{$suffix}0 {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .pt-#{$suffix}0 {
+        padding-top: 0 !important;
+    }
+
+    .pb-#{$suffix}0 {
+        padding-bottom: 0 !important;
+    }
+
+    .ps-#{$suffix}0 {
+        padding-left: 0 !important;
+    }
+
+    .pe-#{$suffix}0 {
+        padding-right: 0 !important;
+    }
+}
+
+
+@mixin make-margins($breakpoint, $from,  $to) {
+    @for $i from $from to $to {
+        @include make-margins-val($i * 5, $breakpoint);
+
+    }
+}
+
+@include make-margins-zero();
+
+@for $i from 5 to 21 {
+    @include make-margins-val($i);
+}
+
+@for $i from $margins-from to $margins-to {
+    @include make-margins-val($i * 5);
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        @include make-margins-zero($breakpoint);
+        @include make-margins-val(8, $breakpoint);
+        @for $i from 5 to 21 {
+            @include make-margins-val($i, $breakpoint);
+        }
+        @include make-margins-val(150, $breakpoint);
+        @include make-margins-val(190, $breakpoint);
+        @include make-margins-val(200, $breakpoint);
+        @include make-margins-val(250, $breakpoint);
+        @include make-margins-val(300, $breakpoint);
+        @include make-margins($breakpoint, $margins-from, $margins-to);
+
+    }
+}
+

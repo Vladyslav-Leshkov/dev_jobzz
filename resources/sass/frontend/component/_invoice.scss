@@ -1,0 +1,41 @@
+.invoice-form{
+    .invoice-total{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        span{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: -0.02em;
+            color: #334E68;
+            margin-right:25px;
+        }
+
+        b{
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 1;
+            letter-spacing: -0.02em;
+            color: #35AA8E;
+        }
+    }
+}
+
+.invoice-card-address{
+    .form-label{
+        font-size: 12px;
+        color: #90A4B7;
+    }
+
+    .form-control{
+        background: #F2F7FB;
+        font-weight: 500;
+        font-size: 16px;
+        color: #2A4B5D;
+        border-bottom-color: #B1CFE8;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
